@@ -1,0 +1,8 @@
+[
+  {
+    "benchmark name": "noir_bigcurve",
+    "path": "libs/cryptography/noir_bigcurve/",
+    "repository": "https://github.com/noir-lang/noir_bigcurve",
+    "commit": "e7e0fd1eba50675fc9c375326c6e3516cd848fa1"
+  }
+]
