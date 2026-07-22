@@ -156,14 +156,25 @@ def _find_compiled_json(benchmark_path: str, json_name: str) -> str:
     )
 
 def _copy_benchmark_source(source_path: str, work_dir: str) -> str:
+    copy_root = source_path
+    benchmark_relpath = "."
+    bench_dir = os.path.dirname(source_path)
+    primary_dir = os.path.dirname(bench_dir)
+    if (
+        os.path.basename(bench_dir) == "bench"
+        and os.path.isfile(os.path.join(primary_dir, "lib", "Nargo.toml"))
+    ):
+        copy_root = primary_dir
+        benchmark_relpath = os.path.relpath(source_path, copy_root)
+
     destination = os.path.join(work_dir, "benchmark")
     shutil.copytree(
-        source_path,
+        copy_root,
         destination,
         ignore=shutil.ignore_patterns("target", "llzk-outputs"),
         symlinks=True,
     )
-    return destination
+    return os.path.join(destination, benchmark_relpath)
 
 def _remove_if_exists(path: str) -> None:
     try:
