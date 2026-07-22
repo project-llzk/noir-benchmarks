@@ -10,5 +10,11 @@
     "path": "libs/cryptography/noir_keccak256",
     "repository": "https://github.com/noir-lang/keccak256",
     "commit": "f64ab3af714aa1a1e2699243037e0f11fe5bf706"
+  },
+  {
+    "benchmark name": "payy",
+    "path": "applications/payy",
+    "repository": "https://github.com/polybase/payy",
+    "commit": "2f95947f12981a838f6f0c9dddace825bf835502"
   }
 ]

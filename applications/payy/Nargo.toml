@@ -1,0 +1,18 @@
+[workspace]
+# SPEC(docs/specs/privacy-protocol#evm-circuit-directory-layout)
+members = [
+  "utxo",
+  "agg_utxo",
+  "agg_agg",
+  "agg_final",
+  "signature",
+  "points",
+  "migrate",
+  "poseidon_alt",
+  "evm/common",
+  "evm/erc20_transfer",
+  "evm/mint",
+  "evm/burn",
+  "evm/transfer_send",
+  "evm/transfer_claim",
+]
