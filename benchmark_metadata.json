@@ -4,5 +4,11 @@
     "path": "libs/cryptography/noir_bigcurve/",
     "repository": "https://github.com/noir-lang/noir_bigcurve",
     "commit": "e7e0fd1eba50675fc9c375326c6e3516cd848fa1"
+  },
+  {
+    "benchmark name": "noir_keccak256",
+    "path": "libs/cryptography/noir_keccak256",
+    "repository": "https://github.com/noir-lang/keccak256",
+    "commit": "f64ab3af714aa1a1e2699243037e0f11fe5bf706"
   }
 ]
