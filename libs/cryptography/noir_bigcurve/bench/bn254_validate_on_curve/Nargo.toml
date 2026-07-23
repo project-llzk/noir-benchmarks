@@ -1,0 +1,8 @@
+[package]
+name = "noir_bigcurve_bn254_validate_on_curve"
+type = "bin"
+authors = [""]
+compiler_version = ">=1.0.0"
+
+[dependencies]
+noir_bigcurve = { path = "../../lib" }

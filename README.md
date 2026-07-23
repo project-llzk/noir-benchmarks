@@ -15,7 +15,7 @@ The list of benchmarks is recorded in `benchmark_metadata.json`. It is organized
 
 ## Running LLZK Over Benchmarks
 
-Use the evaluation script with the `noir_llzk` binary:
+Use Python 3.11 or newer to run the evaluation script with the `noir_llzk` binary:
 
 ```
 python3 noir_to_llzk_eval.py --benchmark_dir . --timeout [seconds] --noir-bin [path-to-noir-bin]

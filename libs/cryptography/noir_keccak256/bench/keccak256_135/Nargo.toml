@@ -1,0 +1,8 @@
+[package]
+name = "noir_keccak256_135"
+type = "bin"
+authors = ["noir-lang"]
+compiler_version = ">=1.0.0"
+
+[dependencies]
+keccak256 = { path = "../../lib" }

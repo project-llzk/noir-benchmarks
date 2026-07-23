@@ -1,0 +1,80 @@
+[
+  {
+    "benchmark name": "noir_bigcurve_bn254_add",
+    "path": "libs/cryptography/noir_bigcurve/bench/bn254_add",
+    "repository": "https://github.com/noir-lang/noir_bigcurve",
+    "commit": "e7e0fd1eba50675fc9c375326c6e3516cd848fa1"
+  },
+  {
+    "benchmark name": "noir_bigcurve_bn254_sub",
+    "path": "libs/cryptography/noir_bigcurve/bench/bn254_sub",
+    "repository": "https://github.com/noir-lang/noir_bigcurve",
+    "commit": "e7e0fd1eba50675fc9c375326c6e3516cd848fa1"
+  },
+  {
+    "benchmark name": "noir_bigcurve_bn254_neg",
+    "path": "libs/cryptography/noir_bigcurve/bench/bn254_neg",
+    "repository": "https://github.com/noir-lang/noir_bigcurve",
+    "commit": "e7e0fd1eba50675fc9c375326c6e3516cd848fa1"
+  },
+  {
+    "benchmark name": "noir_bigcurve_bn254_eq",
+    "path": "libs/cryptography/noir_bigcurve/bench/bn254_eq",
+    "repository": "https://github.com/noir-lang/noir_bigcurve",
+    "commit": "e7e0fd1eba50675fc9c375326c6e3516cd848fa1"
+  },
+  {
+    "benchmark name": "noir_bigcurve_bn254_validate_on_curve",
+    "path": "libs/cryptography/noir_bigcurve/bench/bn254_validate_on_curve",
+    "repository": "https://github.com/noir-lang/noir_bigcurve",
+    "commit": "e7e0fd1eba50675fc9c375326c6e3516cd848fa1"
+  },
+  {
+    "benchmark name": "noir_bigcurve_bn254_mul",
+    "path": "libs/cryptography/noir_bigcurve/bench/bn254_mul",
+    "repository": "https://github.com/noir-lang/noir_bigcurve",
+    "commit": "e7e0fd1eba50675fc9c375326c6e3516cd848fa1"
+  },
+  {
+    "benchmark name": "noir_bigcurve_bn254_hash_to_curve",
+    "path": "libs/cryptography/noir_bigcurve/bench/bn254_hash_to_curve",
+    "repository": "https://github.com/noir-lang/noir_bigcurve",
+    "commit": "e7e0fd1eba50675fc9c375326c6e3516cd848fa1"
+  },
+  {
+    "benchmark name": "noir_bigcurve_bn254_evaluate_linear_expression",
+    "path": "libs/cryptography/noir_bigcurve/bench/bn254_evaluate_linear_expression",
+    "repository": "https://github.com/noir-lang/noir_bigcurve",
+    "commit": "e7e0fd1eba50675fc9c375326c6e3516cd848fa1"
+  },
+  {
+    "benchmark name": "noir_keccak256_1",
+    "path": "libs/cryptography/noir_keccak256/bench/keccak256_1",
+    "repository": "https://github.com/noir-lang/keccak256",
+    "commit": "f64ab3af714aa1a1e2699243037e0f11fe5bf706"
+  },
+  {
+    "benchmark name": "noir_keccak256_100",
+    "path": "libs/cryptography/noir_keccak256/bench/keccak256_100",
+    "repository": "https://github.com/noir-lang/keccak256",
+    "commit": "f64ab3af714aa1a1e2699243037e0f11fe5bf706"
+  },
+  {
+    "benchmark name": "noir_keccak256_135",
+    "path": "libs/cryptography/noir_keccak256/bench/keccak256_135",
+    "repository": "https://github.com/noir-lang/keccak256",
+    "commit": "f64ab3af714aa1a1e2699243037e0f11fe5bf706"
+  },
+  {
+    "benchmark name": "noir_keccak256_256",
+    "path": "libs/cryptography/noir_keccak256/bench/keccak256_256",
+    "repository": "https://github.com/noir-lang/keccak256",
+    "commit": "f64ab3af714aa1a1e2699243037e0f11fe5bf706"
+  },
+  {
+    "benchmark name": "payy",
+    "path": "applications/payy",
+    "repository": "https://github.com/polybase/payy",
+    "commit": "2f95947f12981a838f6f0c9dddace825bf835502"
+  }
+]
