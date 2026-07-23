@@ -333,9 +333,15 @@ def run_benchmarks(
     ]
 
     if nthreads == 1:
-        for group, _, _, _, _ in group_args:
+        for group, group_nargo_bin, group_a2l_bin, group_output_dir, group_timeout in group_args:
             print(f"Running {group['name']}")
-            group_results = run_group(group, nargo_bin, a2l_bin, output_dir, timeout)
+            group_results = run_group(
+                group,
+                group_nargo_bin,
+                group_a2l_bin,
+                group_output_dir,
+                group_timeout,
+            )
             results.extend(group_results)
             print(f"Exit conditions: {', '.join(result[1] for result in group_results)}")
     else:
