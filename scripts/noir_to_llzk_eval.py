@@ -5,7 +5,7 @@
 #   on noir-benchmarks and writes a CSV with timing results.
 #
 # Required Programs:
-#   - python3: For running this script
+#   - python3 >= 3.11: For running this script
 #   - nargo(>=1.0.0): For compiling benchmarks to acir
 #   - acir2llzk: For compiling acir to llzk -> https://github.com/project-llzk/noir_llzk/
 #
@@ -23,6 +23,10 @@
 #
 # The easiest appraoch is to run this script from the root of the `noir_llzk` repo within the nix dev shell:
 #   [...]/noir-benchmarks/scripts/noir_to_llzk_eval.py --benchmark_dir [...]/noir-benchmarks --a2l-bin target/release/acir2llzk
+
+import sys
+if sys.version_info < (3, 11):
+    sys.exit("error: noir_to_llzk_eval.py requires Python 3.11 or newer")
 
 import argparse
 import csv
