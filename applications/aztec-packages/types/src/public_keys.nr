@@ -61,7 +61,11 @@ impl Default for PublicKeys {
         PublicKeys {
             npk_m_hash: DEFAULT_NPK_M_HASH,
             ivpk_m: IvpkM {
-                inner: EmbeddedCurvePoint { x: DEFAULT_IVPK_M_X, y: DEFAULT_IVPK_M_Y },
+                inner: EmbeddedCurvePoint {
+                    x: DEFAULT_IVPK_M_X,
+                    y: DEFAULT_IVPK_M_Y,
+                    is_infinite: false,
+                },
             },
             ovpk_m_hash: DEFAULT_OVPK_M_HASH,
             tpk_m_hash: DEFAULT_TPK_M_HASH,
@@ -99,7 +103,7 @@ impl PublicKeys {
     /// As with [`Self::validate_on_curve`], the other five keys are now exposed only as hashes
     /// and this property must be enforced PXE-side.
     pub fn validate_non_infinity(self) {
-        assert_eq(self.ivpk_m.inner.is_infinite(), false, "IvpkM is the point at infinity");
+        assert_eq(self.ivpk_m.inner.is_infinite, false, "IvpkM is the point at infinity");
     }
 }
 
@@ -135,27 +139,27 @@ mod test {
     #[test]
     fn default_hashes_match_default_points() {
         let npk = hash_public_key(
-            EmbeddedCurvePoint { x: DEFAULT_NPK_M_X, y: DEFAULT_NPK_M_Y },
+            EmbeddedCurvePoint { x: DEFAULT_NPK_M_X, y: DEFAULT_NPK_M_Y, is_infinite: false },
         );
         assert_eq(npk, DEFAULT_NPK_M_HASH);
 
         let ovpk = hash_public_key(
-            EmbeddedCurvePoint { x: DEFAULT_OVPK_M_X, y: DEFAULT_OVPK_M_Y },
+            EmbeddedCurvePoint { x: DEFAULT_OVPK_M_X, y: DEFAULT_OVPK_M_Y, is_infinite: false },
         );
         assert_eq(ovpk, DEFAULT_OVPK_M_HASH);
 
         let tpk = hash_public_key(
-            EmbeddedCurvePoint { x: DEFAULT_TPK_M_X, y: DEFAULT_TPK_M_Y },
+            EmbeddedCurvePoint { x: DEFAULT_TPK_M_X, y: DEFAULT_TPK_M_Y, is_infinite: false },
         );
         assert_eq(tpk, DEFAULT_TPK_M_HASH);
 
         let mspk = hash_public_key(
-            EmbeddedCurvePoint { x: DEFAULT_MSPK_M_X, y: DEFAULT_MSPK_M_Y },
+            EmbeddedCurvePoint { x: DEFAULT_MSPK_M_X, y: DEFAULT_MSPK_M_Y, is_infinite: false },
         );
         assert_eq(mspk, DEFAULT_MSPK_M_HASH);
 
         let fbpk = hash_public_key(
-            EmbeddedCurvePoint { x: DEFAULT_FBPK_M_X, y: DEFAULT_FBPK_M_Y },
+            EmbeddedCurvePoint { x: DEFAULT_FBPK_M_X, y: DEFAULT_FBPK_M_Y, is_infinite: false },
         );
         assert_eq(fbpk, DEFAULT_FBPK_M_HASH);
     }
@@ -164,7 +168,7 @@ mod test {
     fn compute_public_keys_hash() {
         let keys = PublicKeys {
             npk_m_hash: 11,
-            ivpk_m: IvpkM { inner: EmbeddedCurvePoint { x: 3, y: 4 } },
+            ivpk_m: IvpkM { inner: EmbeddedCurvePoint { x: 3, y: 4, is_infinite: false } },
             ovpk_m_hash: 22,
             tpk_m_hash: 33,
             mspk_m_hash: 44,
@@ -197,7 +201,7 @@ mod test {
     fn test_validate_not_on_curve() {
         let keys = PublicKeys {
             npk_m_hash: 0,
-            ivpk_m: IvpkM { inner: EmbeddedCurvePoint { x: 3, y: 4 } },
+            ivpk_m: IvpkM { inner: EmbeddedCurvePoint { x: 3, y: 4, is_infinite: false } },
             ovpk_m_hash: 0,
             tpk_m_hash: 0,
             mspk_m_hash: 0,
@@ -251,7 +255,7 @@ mod test {
     fn serde() {
         let keys = PublicKeys {
             npk_m_hash: 11,
-            ivpk_m: IvpkM { inner: EmbeddedCurvePoint { x: 3, y: 4 } },
+            ivpk_m: IvpkM { inner: EmbeddedCurvePoint { x: 3, y: 4, is_infinite: false } },
             ovpk_m_hash: 22,
             tpk_m_hash: 33,
             mspk_m_hash: 44,

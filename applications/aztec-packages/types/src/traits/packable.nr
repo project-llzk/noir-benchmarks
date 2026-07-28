@@ -93,8 +93,8 @@ mod test {
 
     #[derive(Eq)]
     struct TwoBooleans {
-        a: bool,
-        b: bool,
+        a: u1,
+        b: u1,
     }
 
     impl Packable for TwoBooleans {
@@ -105,7 +105,7 @@ mod test {
         }
 
         fn unpack(packed: [Field; Self::N]) -> Self {
-            let bits: [bool; 2] = packed[0].to_le_bits();
+            let bits: [u1; 2] = packed[0].to_le_bits();
             let b = bits[0];
             let a = bits[1];
 
@@ -115,16 +115,16 @@ mod test {
 
     #[test]
     fn pack_unpack_docs_example() {
-        let x = TwoBooleans { a: false, b: false };
+        let x = TwoBooleans { a: 0, b: 0 };
         assert_eq(TwoBooleans::unpack(x.pack()), x);
 
-        let x = TwoBooleans { a: false, b: true };
+        let x = TwoBooleans { a: 0, b: 1 };
         assert_eq(TwoBooleans::unpack(x.pack()), x);
 
-        let x = TwoBooleans { a: true, b: false };
+        let x = TwoBooleans { a: 1, b: 0 };
         assert_eq(TwoBooleans::unpack(x.pack()), x);
 
-        let x = TwoBooleans { a: true, b: true };
+        let x = TwoBooleans { a: 1, b: 1 };
         assert_eq(TwoBooleans::unpack(x.pack()), x);
     }
 }

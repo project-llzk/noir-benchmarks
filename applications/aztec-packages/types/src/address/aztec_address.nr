@@ -66,7 +66,9 @@ impl AztecAddress {
             // positive one (where y <= (r - 1) / 2) by negating it.
             let final_y = if Self::is_positive(y) { y } else { -y };
 
-            AddressPoint { inner: EmbeddedCurvePoint { x: self.inner, y: final_y } }
+            AddressPoint {
+                inner: EmbeddedCurvePoint { x: self.inner, y: final_y, is_infinite: false },
+            }
         })
     }
 
@@ -196,7 +198,7 @@ fn check_is_positive() {
 fn check_embedded_curve_point_add() {
     // Choose a point not on the curve in the 2nd position.
     let p1 = EmbeddedCurvePoint::generator();
-    let key = IvpkM { inner: EmbeddedCurvePoint { x: 1, y: 1 } };
+    let key = IvpkM { inner: EmbeddedCurvePoint { x: 1, y: 1, is_infinite: false } };
     let _ = p1 + key.to_point();
 }
 
@@ -205,22 +207,27 @@ fn compute_address_from_partial_and_pub_keys() {
     let npk_m_point = EmbeddedCurvePoint {
         x: 0x22f7fcddfa3ce3e8f0cc8e82d7b94cdd740afa3e77f8e4a63ea78a239432dcab,
         y: 0x0471657de2b6216ade6c506d28fbc22ba8b8ed95c871ad9f3e3984e90d9723a7,
+        is_infinite: false,
     };
     let ovpk_m_point = EmbeddedCurvePoint {
         x: 0x09115c96e962322ffed6522f57194627136b8d03ac7469109707f5e44190c484,
         y: 0x0c49773308a13d740a7f0d4f0e6163b02c5a408b6f965856b6a491002d073d5b,
+        is_infinite: false,
     };
     let tpk_m_point = EmbeddedCurvePoint {
         x: 0x00d3d81beb009873eb7116327cf47c612d5758ef083d4fda78e9b63980b2a762,
         y: 0x2f567d22d2b02fe1f4ad42db9d58a36afd1983e7e2909d1cab61cafedad6193a,
+        is_infinite: false,
     };
     let mspk_m_point = EmbeddedCurvePoint {
         x: 0x1bd6cb13e0bc8c6e0c1a8b2c5d7f9e0a4b6c8d0e2f4a6c8e0a2c4e6f8a0b2c4d,
         y: 0x0a032ec7b21c2bdb35f8a13e594764e39ee786c4b275eef3f0435bf6ab2b9822,
+        is_infinite: false,
     };
     let fbpk_m_point = EmbeddedCurvePoint {
         x: 0x2c8e0a2c4e6f8b0d2f4a6c8e0a2c4e6f8b0d2f4a6c8e0a2c4e6f8b0d2f4a6c90,
         y: 0x2ef338da3a77e65f90b6d48ac686fc9ff3a95de0c39e0426fc443377425e6634,
+        is_infinite: false,
     };
 
     let public_keys = PublicKeys {
@@ -229,6 +236,7 @@ fn compute_address_from_partial_and_pub_keys() {
             inner: EmbeddedCurvePoint {
                 x: 0x111223493147f6785514b1c195bb37a2589f22a6596d30bb2bb145fdc9ca8f1e,
                 y: 0x273bbffd678edce8fe30e0deafc4f66d58357c06fd4a820285294b9746c3be95,
+                is_infinite: false,
             },
         },
         ovpk_m_hash: hash_public_key(ovpk_m_point),

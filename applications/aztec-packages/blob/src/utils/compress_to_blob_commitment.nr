@@ -19,9 +19,9 @@ pub fn compress_to_blob_commitment(point: BLSPoint) -> (BatchingBlobCommitment) 
     validate_canonical_representation_if_infinity(point);
     let (flags, x) = get_flags(point);
     let mut compressed = x.to_be_bytes();
-    let most_sig_bits: [bool; 8] = (compressed[0] as Field).to_be_bits();
+    let most_sig_bits: [u1; 8] = (compressed[0] as Field).to_be_bits();
     for i in 0..3 {
-        assert_eq(most_sig_bits[i], false, "Invalid BLS12-381 x coordinate given to compress().");
+        assert_eq(most_sig_bits[i], 0, "Invalid BLS12-381 x coordinate given to compress().");
     }
     compressed[0] = set_flags(flags, compressed[0]);
     BatchingBlobCommitment { point, compressed }

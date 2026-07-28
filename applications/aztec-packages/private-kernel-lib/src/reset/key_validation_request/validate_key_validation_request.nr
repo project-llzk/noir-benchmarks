@@ -59,7 +59,7 @@ pub fn validate_key_validation_request(
 
     // Safeguard against using a secret key equals to zero.
     assert_eq(
-        pk_m.is_infinite(),
+        pk_m.is_infinite,
         false,
         "Derived master public key cannot be the point at infinity",
     );

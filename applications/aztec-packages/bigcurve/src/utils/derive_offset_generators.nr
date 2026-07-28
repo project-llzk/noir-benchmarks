@@ -31,10 +31,10 @@ where
     let g_init: CurveJ<BN, Curve> = CurveJ::<BN, Curve>::from(g);
     let mut gen: CurveJ<BN, Curve> = g_init;
 
-    let cofactor_bits: [bool; 128] = cofactor.to_be_bits();
+    let cofactor_bits: [u1; 128] = cofactor.to_be_bits();
     let mut it: u32 = 0;
     for i in 0..128 {
-        if (cofactor_bits[i]) {
+        if (cofactor_bits[i] == 1) {
             it = i + 1;
             break;
         }
@@ -42,7 +42,7 @@ where
 
     for i in it..128 {
         gen = gen.dbl().0;
-        if (cofactor_bits[i]) {
+        if (cofactor_bits[i] == 1) {
             gen = gen.incomplete_add(g_init).0;
         }
     }

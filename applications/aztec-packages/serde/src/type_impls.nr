@@ -494,12 +494,12 @@ impl Deserialize for EmbeddedCurvePoint {
     let N: u32 = POINT_SIZE;
 
     fn deserialize(fields: [Field; Self::N]) -> Self {
-        Self { x: fields[0], y: fields[1] }
+        Self { x: fields[0], y: fields[1], is_infinite: false }
     }
 
     #[inline_always]
     fn stream_deserialize<let K: u32>(reader: &mut Reader<K>) -> Self {
-        Self { x: reader.read(), y: reader.read() }
+        Self { x: reader.read(), y: reader.read(), is_infinite: false }
     }
 }
 

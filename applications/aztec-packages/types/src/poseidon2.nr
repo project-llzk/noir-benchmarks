@@ -39,7 +39,7 @@ impl Poseidon2Sponge {
                 self.state[i] += self.cache[i];
             }
         }
-        self.state = std::hash::poseidon2_permutation(self.state);
+        self.state = std::hash::poseidon2_permutation(self.state, 4);
     }
 
     pub fn absorb(&mut self, input: Field) {
