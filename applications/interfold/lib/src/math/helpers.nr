@@ -170,6 +170,14 @@ pub fn compute_safe(
     digests
 }
 
+fn test_input_3(a: Field, b: Field, c: Field) -> Vec<Field> {
+    let mut input = Vec::new();
+    input.push(a);
+    input.push(b);
+    input.push(c);
+    input
+}
+
 #[test]
 fn test_flatten() {
     // Create test polynomials
@@ -285,17 +293,16 @@ fn test_safe_hashing_with_safe_helper() {
         0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
         0, 0, 0, 0, 0, 0,
     ];
-    let elements = Vec::from_slice(&[1, 2, 3]);
 
     // Pattern: ABSORB(3), SQUEEZE(1)
     let io_pattern = [0x80000003, 0x00000001];
-    let digests1 = compute_safe(domain_separator, elements, io_pattern);
+    let digests1 = compute_safe(domain_separator, test_input_3(1, 2, 3), io_pattern);
 
     assert(digests1.len() == 1);
     assert(digests1.get(0) != 0);
 
     // Test determinism
-    let digests2 = compute_safe(domain_separator, elements, io_pattern);
+    let digests2 = compute_safe(domain_separator, test_input_3(1, 2, 3), io_pattern);
 
     assert(digests2.len() == 1);
     assert(digests2.get(0) != 0);
