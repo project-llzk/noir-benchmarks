@@ -103,5 +103,12 @@
     "repository": "https://github.com/zerosats/zerosats",
     "commit": "4c3d4b25124cec5f0511b1ca45f9d3f36f01e16a",
     "enabled": true
+  },
+  {
+    "benchmark name": "aztec-packages",
+    "path": "applications/aztec-packages",
+    "repository": "https://github.com/AztecProtocol/aztec-packages",
+    "commit": "3ffc13a503b7bf321c3578399074938c75f2ac7e",
+    "enabled": false
   }
 ]
