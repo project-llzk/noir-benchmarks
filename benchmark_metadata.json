@@ -110,5 +110,33 @@
     "repository": "https://github.com/AztecProtocol/aztec-packages",
     "commit": "3ffc13a503b7bf321c3578399074938c75f2ac7e",
     "enabled": false
+  },
+  {
+    "benchmark name": "interfold-config",
+    "path": "applications/interfold/bin/config",
+    "repository": "https://github.com/theinterfold/interfold",
+    "commit": "2ba9b755d120e6a1c71c0a9f5cae4ef28103c448",
+    "enabled": true
+  },
+  {
+    "benchmark name": "interfold-dkg",
+    "path": "applications/interfold/bin/dkg",
+    "repository": "https://github.com/theinterfold/interfold",
+    "commit": "2ba9b755d120e6a1c71c0a9f5cae4ef28103c448",
+    "enabled": true
+  },
+  {
+    "benchmark name": "interfold-threshold",
+    "path": "applications/interfold/bin/threshold",
+    "repository": "https://github.com/theinterfold/interfold",
+    "commit": "2ba9b755d120e6a1c71c0a9f5cae4ef28103c448",
+    "enabled": true
+  },
+  {
+    "benchmark name": "interfold-recursive-aggregation",
+    "path": "applications/interfold/bin/recursive_aggregation",
+    "repository": "https://github.com/theinterfold/interfold",
+    "commit": "2ba9b755d120e6a1c71c0a9f5cae4ef28103c448",
+    "enabled": true
   }
 ]
