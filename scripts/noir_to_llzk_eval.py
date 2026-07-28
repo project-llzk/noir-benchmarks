@@ -46,6 +46,9 @@ Benchmark = Dict[str, str]
 BenchmarkGroup = Dict[str, object]
 Result = Tuple[str, str, str, str, str, str]
 
+def benchmark_enabled(entry: Benchmark) -> bool:
+    return entry.get("enabled") is True
+
 def resolve_tool(binary: str) -> str:
     """Return an executable path for a configured binary, or raise FileNotFoundError."""
     expanded = os.path.expanduser(binary)
@@ -67,6 +70,8 @@ def load_benchmark_groups(benchmark_dir: str) -> List[BenchmarkGroup]:
 
     groups = []
     for entry in metadata:
+        if not benchmark_enabled(entry):
+            continue
         try:
             benchmark_name = entry["benchmark name"]
             benchmark_path = entry["path"]
