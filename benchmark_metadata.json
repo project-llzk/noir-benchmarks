@@ -82,5 +82,11 @@
     "path": "applications/stellar/confidential_token",
     "repository": "https://github.com/OpenZeppelin/stellar-contracts",
     "commit": "56d6e5b91aed828051163cebd92dab6c3ca2fa92"
+  },
+  {
+    "benchmark name": "zerosats_ciphera",
+    "path": "applications/zerosats/ciphera",
+    "repository": "https://github.com/zerosats/zerosats",
+    "commit": "4c3d4b25124cec5f0511b1ca45f9d3f36f01e16a"
   }
 ]
