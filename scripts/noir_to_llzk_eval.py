@@ -40,11 +40,14 @@ import subprocess
 import tempfile
 import time
 import tomllib
-from typing import Dict, List, Tuple
+from typing import Dict, Iterable, List, Set, Tuple
 
 Benchmark = Dict[str, str]
 BenchmarkGroup = Dict[str, object]
 Result = Tuple[str, str, str, str, str, str]
+
+def benchmark_enabled(entry: Benchmark) -> bool:
+    return entry.get("enabled") is True
 
 def resolve_tool(binary: str) -> str:
     """Return an executable path for a configured binary, or raise FileNotFoundError."""
@@ -67,6 +70,8 @@ def load_benchmark_groups(benchmark_dir: str) -> List[BenchmarkGroup]:
 
     groups = []
     for entry in metadata:
+        if not benchmark_enabled(entry):
+            continue
         try:
             benchmark_name = entry["benchmark name"]
             benchmark_path = entry["path"]
@@ -76,6 +81,8 @@ def load_benchmark_groups(benchmark_dir: str) -> List[BenchmarkGroup]:
         nargo_toml = os.path.join(benchmark_path, "Nargo.toml")
         manifest = _load_nargo_manifest(nargo_toml)
         workspace = manifest.get("workspace")
+
+        required_paths, missing_dependencies = _collect_required_nargo_paths(benchmark_path, manifest)
 
         if workspace:
             benchmarks = []
@@ -94,6 +101,8 @@ def load_benchmark_groups(benchmark_dir: str) -> List[BenchmarkGroup]:
                 "name": benchmark_name,
                 "source_path": benchmark_path,
                 "compile_args": ["compile", "--workspace"],
+                "required_paths": required_paths,
+                "missing_dependencies": missing_dependencies,
                 "benchmarks": benchmarks,
             })
         else:
@@ -102,6 +111,8 @@ def load_benchmark_groups(benchmark_dir: str) -> List[BenchmarkGroup]:
                 "name": benchmark_name,
                 "source_path": benchmark_path,
                 "compile_args": ["compile"],
+                "required_paths": required_paths,
+                "missing_dependencies": missing_dependencies,
                 "benchmarks": [{
                     "name": benchmark_name,
                     "json_name": package_name,
@@ -121,6 +132,58 @@ def _package_name(manifest: Dict, package_path: str) -> str:
 def _package_type(manifest: Dict) -> str:
     package = manifest.get("package", {})
     return package.get("type", "bin")
+
+def _collect_required_nargo_paths(root_path: str, root_manifest: Dict) -> Tuple[List[str], List[str]]:
+    """Return Nargo project paths needed to compile root_path plus missing manifests."""
+    required_paths: Set[str] = {root_path}
+    missing_dependencies: Set[str] = set()
+    visited: Set[str] = set()
+
+    workspace = root_manifest.get("workspace")
+    if workspace:
+        pending = [
+            os.path.abspath(os.path.join(root_path, member))
+            for member in workspace.get("members", [])
+        ]
+    else:
+        pending = [root_path]
+
+    while pending:
+        package_path = os.path.abspath(pending.pop())
+        if package_path in visited:
+            continue
+        visited.add(package_path)
+        required_paths.add(package_path)
+
+        manifest_path = os.path.join(package_path, "Nargo.toml")
+        if package_path == root_path:
+            manifest = root_manifest
+        elif os.path.isfile(manifest_path):
+            manifest = _load_nargo_manifest(manifest_path)
+        else:
+            missing_dependencies.add(manifest_path)
+            continue
+
+        for dependency_path in _local_dependency_paths(manifest, package_path):
+            dependency_manifest = os.path.join(dependency_path, "Nargo.toml")
+            if os.path.isfile(dependency_manifest):
+                pending.append(dependency_path)
+            else:
+                missing_dependencies.add(dependency_manifest)
+
+    return sorted(required_paths), sorted(missing_dependencies)
+
+def _local_dependency_paths(manifest: Dict, manifest_dir: str) -> Iterable[str]:
+    for section_name in ("dependencies", "dev-dependencies"):
+        dependencies = manifest.get(section_name, {})
+        if not isinstance(dependencies, dict):
+            continue
+        for dependency in dependencies.values():
+            if not isinstance(dependency, dict):
+                continue
+            dependency_path = dependency.get("path")
+            if isinstance(dependency_path, str):
+                yield os.path.abspath(os.path.join(manifest_dir, dependency_path))
 
 def _error_message(stage: str, message: str) -> str:
     return f"{stage}: {message.strip()[:400]}"
@@ -159,7 +222,27 @@ def _find_compiled_json(benchmark_path: str, json_name: str) -> str:
         f"nargo produced multiple JSON files, but none named {json_name}.json"
     )
 
-def _copy_benchmark_source(source_path: str, work_dir: str) -> str:
+def _is_relative_to(path: str, parent: str) -> bool:
+    return os.path.commonpath([path, parent]) == parent
+
+def _minimal_copy_roots(paths: List[str]) -> List[str]:
+    copy_roots = []
+    for path in sorted(set(os.path.abspath(path) for path in paths)):
+        if any(_is_relative_to(path, existing) for existing in copy_roots):
+            continue
+        copy_roots = [
+            existing
+            for existing in copy_roots
+            if not _is_relative_to(existing, path)
+        ]
+        copy_roots.append(path)
+    return copy_roots
+
+def _copy_benchmark_source(
+    source_path: str,
+    work_dir: str,
+    required_paths: List[str] | None = None,
+) -> str:
     copy_root = source_path
     benchmark_relpath = "."
     bench_dir = os.path.dirname(source_path)
@@ -172,13 +255,46 @@ def _copy_benchmark_source(source_path: str, work_dir: str) -> str:
         benchmark_relpath = os.path.relpath(source_path, copy_root)
 
     destination = os.path.join(work_dir, "benchmark")
-    shutil.copytree(
-        copy_root,
-        destination,
-        ignore=shutil.ignore_patterns("target", "llzk-outputs"),
-        symlinks=True,
-    )
+    paths_to_copy = _minimal_copy_roots([copy_root, *(required_paths or [])])
+    common_root = os.path.commonpath(paths_to_copy)
+
+    if len(paths_to_copy) == 1 and paths_to_copy[0] == common_root:
+        selected_root = paths_to_copy[0]
+        shutil.copytree(
+            selected_root,
+            destination,
+            ignore=shutil.ignore_patterns("target", "llzk-outputs"),
+            symlinks=True,
+        )
+        benchmark_relpath = os.path.relpath(source_path, selected_root)
+    else:
+        os.makedirs(destination, exist_ok=True)
+        for path in paths_to_copy:
+            relative_path = os.path.relpath(path, common_root)
+            destination_path = os.path.join(destination, relative_path)
+            os.makedirs(os.path.dirname(destination_path), exist_ok=True)
+            shutil.copytree(
+                path,
+                destination_path,
+                ignore=shutil.ignore_patterns("target", "llzk-outputs"),
+                symlinks=True,
+            )
+        benchmark_relpath = os.path.relpath(source_path, common_root)
+
     return os.path.join(destination, benchmark_relpath)
+
+def _missing_dependencies_error(missing_dependencies: List[str]) -> str:
+    display_paths = []
+    for path in missing_dependencies:
+        try:
+            display_paths.append(os.path.relpath(path))
+        except ValueError:
+            display_paths.append(path)
+    missing_list = ", ".join(display_paths[:8])
+    remaining = len(display_paths) - 8
+    if remaining > 0:
+        missing_list = f"{missing_list}, and {remaining} more"
+    return f"missing local path dependency manifests in source checkout: {missing_list}"
 
 def _remove_if_exists(path: str) -> None:
     try:
@@ -267,18 +383,26 @@ def run_group(
     group_name = str(group["name"])
     source_path = str(group["source_path"])
     benchmarks = group["benchmarks"]
+    required_paths = group.get("required_paths", [])
+    missing_dependencies = group.get("missing_dependencies", [])
     compile_start = None
     if not isinstance(benchmarks, list):
         raise TypeError(f"Invalid benchmarks list for {group_name}")
+    if not isinstance(required_paths, list):
+        raise TypeError(f"Invalid required paths list for {group_name}")
+    if not isinstance(missing_dependencies, list):
+        raise TypeError(f"Invalid missing dependencies list for {group_name}")
 
     try:
         if not os.path.isdir(source_path):
             raise FileNotFoundError(f"benchmark path does not exist: {source_path}")
         if not os.path.isfile(os.path.join(source_path, "Nargo.toml")):
             raise FileNotFoundError(f"benchmark path does not contain Nargo.toml: {source_path}")
+        if missing_dependencies:
+            raise FileNotFoundError(_missing_dependencies_error(missing_dependencies))
 
         with tempfile.TemporaryDirectory(prefix="nargo-", dir=output_dir) as work_dir:
-            benchmark_path = _copy_benchmark_source(source_path, work_dir)
+            benchmark_path = _copy_benchmark_source(source_path, work_dir, required_paths)
             compile_start = time.perf_counter()
             compile_proc = subprocess.run(
                 [nargo_bin, *group["compile_args"]],

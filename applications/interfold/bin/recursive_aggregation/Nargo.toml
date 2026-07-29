@@ -1,0 +1,15 @@
+[workspace]
+members = [
+    "c2ab_fold",
+    "c3_fold",
+    "c3_fold_kernel",
+    "c3ab_fold",
+    "c4ab_fold",
+    "c6_fold",
+    "c6_fold_kernel",
+    "decryption_aggregator",
+    "dkg_aggregator",
+    "node_fold",
+    "nodes_fold",
+    "nodes_fold_kernel",
+]
