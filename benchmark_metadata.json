@@ -210,6 +210,34 @@
     "enabled": true
   },
   {
+    "benchmark name": "noir_sha256_1",
+    "path": "libs/cryptography/noir_sha256/bench/sha256_1",
+    "repository": "https://github.com/noir-lang/sha256",
+    "commit": "9442e5b6856f98b2ec029882d7e90199ecff91ba",
+    "enabled": true
+  },
+  {
+    "benchmark name": "noir_sha256_200",
+    "path": "libs/cryptography/noir_sha256/bench/sha256_200",
+    "repository": "https://github.com/noir-lang/sha256",
+    "commit": "9442e5b6856f98b2ec029882d7e90199ecff91ba",
+    "enabled": true
+  },
+  {
+    "benchmark name": "noir_sha256_511",
+    "path": "libs/cryptography/noir_sha256/bench/sha256_511",
+    "repository": "https://github.com/noir-lang/sha256",
+    "commit": "9442e5b6856f98b2ec029882d7e90199ecff91ba",
+    "enabled": true
+  },
+  {
+    "benchmark name": "noir_sha256_512",
+    "path": "libs/cryptography/noir_sha256/bench/sha256_512",
+    "repository": "https://github.com/noir-lang/sha256",
+    "commit": "9442e5b6856f98b2ec029882d7e90199ecff91ba",
+    "enabled": true
+  },
+  {
     "benchmark name": "payy",
     "path": "applications/payy",
     "repository": "https://github.com/polybase/payy",
