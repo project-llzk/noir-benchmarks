@@ -1,0 +1,8 @@
+[package]
+name = "noir_mimc_bn254_10"
+type = "bin"
+authors = [""]
+compiler_version = ">=1.0.0"
+
+[dependencies]
+mimc = { path = "../../lib" }

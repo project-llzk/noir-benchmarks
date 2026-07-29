@@ -84,6 +84,27 @@
     "enabled": true
   },
   {
+    "benchmark name": "noir_mimc_bn254_1",
+    "path": "libs/cryptography/noir_mimc/bench/mimc_bn254_1",
+    "repository": "https://github.com/noir-lang/mimc",
+    "commit": "68bc75c0d1694aac0e95e4c0be611f9267663882",
+    "enabled": true
+  },
+  {
+    "benchmark name": "noir_mimc_bn254_10",
+    "path": "libs/cryptography/noir_mimc/bench/mimc_bn254_10",
+    "repository": "https://github.com/noir-lang/mimc",
+    "commit": "68bc75c0d1694aac0e95e4c0be611f9267663882",
+    "enabled": true
+  },
+  {
+    "benchmark name": "noir_mimc_bn254_100",
+    "path": "libs/cryptography/noir_mimc/bench/mimc_bn254_100",
+    "repository": "https://github.com/noir-lang/mimc",
+    "commit": "68bc75c0d1694aac0e95e4c0be611f9267663882",
+    "enabled": true
+  },
+  {
     "benchmark name": "payy",
     "path": "applications/payy",
     "repository": "https://github.com/polybase/payy",
