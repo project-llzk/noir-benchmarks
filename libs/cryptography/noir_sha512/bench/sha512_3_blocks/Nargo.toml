@@ -1,0 +1,8 @@
+[package]
+name = "noir_sha512_3_blocks"
+type = "bin"
+authors = [""]
+compiler_version = ">=0.34.0"
+
+[dependencies]
+sha512 = { path = "../../lib" }

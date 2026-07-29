@@ -238,6 +238,69 @@
     "enabled": true
   },
   {
+    "benchmark name": "noir_sha512_compression",
+    "path": "libs/cryptography/noir_sha512/bench/sha512_compression",
+    "repository": "https://github.com/noir-lang/sha512",
+    "commit": "e92ffb473f3264529a0793770f63a09946df50cc",
+    "enabled": false
+  },
+  {
+    "benchmark name": "noir_sha512_1_block",
+    "path": "libs/cryptography/noir_sha512/bench/sha512_1_block",
+    "repository": "https://github.com/noir-lang/sha512",
+    "commit": "e92ffb473f3264529a0793770f63a09946df50cc",
+    "enabled": false
+  },
+  {
+    "benchmark name": "noir_sha512_2_blocks",
+    "path": "libs/cryptography/noir_sha512/bench/sha512_2_blocks",
+    "repository": "https://github.com/noir-lang/sha512",
+    "commit": "e92ffb473f3264529a0793770f63a09946df50cc",
+    "enabled": false
+  },
+  {
+    "benchmark name": "noir_sha512_3_blocks",
+    "path": "libs/cryptography/noir_sha512/bench/sha512_3_blocks",
+    "repository": "https://github.com/noir-lang/sha512",
+    "commit": "e92ffb473f3264529a0793770f63a09946df50cc",
+    "enabled": false
+  },
+  {
+    "benchmark name": "noir_sha512_4_blocks",
+    "path": "libs/cryptography/noir_sha512/bench/sha512_4_blocks",
+    "repository": "https://github.com/noir-lang/sha512",
+    "commit": "e92ffb473f3264529a0793770f63a09946df50cc",
+    "enabled": false
+  },
+  {
+    "benchmark name": "noir_sha512_var_1_block",
+    "path": "libs/cryptography/noir_sha512/bench/sha512_var_1_block",
+    "repository": "https://github.com/noir-lang/sha512",
+    "commit": "e92ffb473f3264529a0793770f63a09946df50cc",
+    "enabled": false
+  },
+  {
+    "benchmark name": "noir_sha512_var_2_blocks",
+    "path": "libs/cryptography/noir_sha512/bench/sha512_var_2_blocks",
+    "repository": "https://github.com/noir-lang/sha512",
+    "commit": "e92ffb473f3264529a0793770f63a09946df50cc",
+    "enabled": false
+  },
+  {
+    "benchmark name": "noir_sha512_var_3_blocks",
+    "path": "libs/cryptography/noir_sha512/bench/sha512_var_3_blocks",
+    "repository": "https://github.com/noir-lang/sha512",
+    "commit": "e92ffb473f3264529a0793770f63a09946df50cc",
+    "enabled": false
+  },
+  {
+    "benchmark name": "noir_sha512_var_4_blocks",
+    "path": "libs/cryptography/noir_sha512/bench/sha512_var_4_blocks",
+    "repository": "https://github.com/noir-lang/sha512",
+    "commit": "e92ffb473f3264529a0793770f63a09946df50cc",
+    "enabled": false
+  },
+  {
     "benchmark name": "payy",
     "path": "applications/payy",
     "repository": "https://github.com/polybase/payy",
