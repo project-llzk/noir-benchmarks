@@ -1,0 +1,8 @@
+[package]
+name = "noir_poseidon2_hash_8"
+type = "bin"
+authors = [""]
+compiler_version = ">=0.34.0"
+
+[dependencies]
+poseidon = { path = "../../lib" }
