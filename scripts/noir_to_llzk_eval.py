@@ -259,12 +259,14 @@ def _copy_benchmark_source(
     common_root = os.path.commonpath(paths_to_copy)
 
     if len(paths_to_copy) == 1 and paths_to_copy[0] == common_root:
+        selected_root = paths_to_copy[0]
         shutil.copytree(
-            copy_root,
+            selected_root,
             destination,
             ignore=shutil.ignore_patterns("target", "llzk-outputs"),
             symlinks=True,
         )
+        benchmark_relpath = os.path.relpath(source_path, selected_root)
     else:
         os.makedirs(destination, exist_ok=True)
         for path in paths_to_copy:
