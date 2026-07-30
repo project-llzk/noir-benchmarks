@@ -833,6 +833,62 @@
     "enabled": true
   },
   {
+    "benchmark name": "sparq_XPath_numeric_int_ops",
+    "path": "libs/encoding/sparq_XPath/bench/numeric_int_ops",
+    "repository": "https://github.com/sparq-org/noir_XPath",
+    "commit": "0aa74d01f6e17e717c67ef370122ce2f257ce81d",
+    "enabled": true
+  },
+  {
+    "benchmark name": "sparq_XPath_sequence_sort_32",
+    "path": "libs/encoding/sparq_XPath/bench/sequence_sort_32",
+    "repository": "https://github.com/sparq-org/noir_XPath",
+    "commit": "0aa74d01f6e17e717c67ef370122ce2f257ce81d",
+    "enabled": true
+  },
+  {
+    "benchmark name": "sparq_XPath_string_contains_64_8",
+    "path": "libs/encoding/sparq_XPath/bench/string_contains_64_8",
+    "repository": "https://github.com/sparq-org/noir_XPath",
+    "commit": "0aa74d01f6e17e717c67ef370122ce2f257ce81d",
+    "enabled": true
+  },
+  {
+    "benchmark name": "sparq_XPath_string_tokenize_64",
+    "path": "libs/encoding/sparq_XPath/bench/string_tokenize_64",
+    "repository": "https://github.com/sparq-org/noir_XPath",
+    "commit": "0aa74d01f6e17e717c67ef370122ce2f257ce81d",
+    "enabled": true
+  },
+  {
+    "benchmark name": "sparq_XPath_regex_replace_literal",
+    "path": "libs/encoding/sparq_XPath/bench/regex_replace_literal",
+    "repository": "https://github.com/sparq-org/noir_XPath",
+    "commit": "0aa74d01f6e17e717c67ef370122ce2f257ce81d",
+    "enabled": true
+  },
+  {
+    "benchmark name": "sparq_XPath_hash_sha256_64",
+    "path": "libs/encoding/sparq_XPath/bench/hash_sha256_64",
+    "repository": "https://github.com/sparq-org/noir_XPath",
+    "commit": "0aa74d01f6e17e717c67ef370122ce2f257ce81d",
+    "enabled": true
+  },
+  {
+    "benchmark name": "sparq_XPath_date_add_duration",
+    "path": "libs/encoding/sparq_XPath/bench/date_add_duration",
+    "repository": "https://github.com/sparq-org/noir_XPath",
+    "commit": "0aa74d01f6e17e717c67ef370122ce2f257ce81d",
+    "enabled": true
+  },
+  {
+    "benchmark name": "sparq_XPath_json_array_number_512b",
+    "path": "libs/encoding/sparq_XPath/bench/json_array_number_512b",
+    "repository": "https://github.com/sparq-org/noir_XPath",
+    "commit": "0aa74d01f6e17e717c67ef370122ce2f257ce81d",
+    "enabled": true
+  },
+  {
     "benchmark name": "payy",
     "path": "applications/payy",
     "repository": "https://github.com/polybase/payy",

@@ -1,0 +1,8 @@
+[package]
+name = "sparq_XPath_string_tokenize_64"
+type = "bin"
+authors = [""]
+compiler_version = ">=1.0.0"
+
+[dependencies]
+xpath = { path = "../../lib/xpath" }
