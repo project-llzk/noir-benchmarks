@@ -1,0 +1,8 @@
+[package]
+name = "noir_bignum_bn254_fq_to_be_bytes"
+type = "bin"
+authors = [""]
+compiler_version = ">=1.0.0"
+
+[dependencies]
+bignum = { path = "../../lib" }

@@ -413,6 +413,118 @@
     "enabled": true
   },
   {
+    "benchmark name": "noir_bignum_bn254_fq_add",
+    "path": "libs/datatypes/noir_bignum/bench/bn254_fq_add",
+    "repository": "https://github.com/noir-lang/noir-bignum",
+    "commit": "00d4360fbaaae71b1ee7f93f78dfad4eb7e11479",
+    "enabled": true
+  },
+  {
+    "benchmark name": "noir_bignum_bn254_fq_sub",
+    "path": "libs/datatypes/noir_bignum/bench/bn254_fq_sub",
+    "repository": "https://github.com/noir-lang/noir-bignum",
+    "commit": "00d4360fbaaae71b1ee7f93f78dfad4eb7e11479",
+    "enabled": true
+  },
+  {
+    "benchmark name": "noir_bignum_bn254_fq_mul",
+    "path": "libs/datatypes/noir_bignum/bench/bn254_fq_mul",
+    "repository": "https://github.com/noir-lang/noir-bignum",
+    "commit": "00d4360fbaaae71b1ee7f93f78dfad4eb7e11479",
+    "enabled": true
+  },
+  {
+    "benchmark name": "noir_bignum_bn254_fq_div",
+    "path": "libs/datatypes/noir_bignum/bench/bn254_fq_div",
+    "repository": "https://github.com/noir-lang/noir-bignum",
+    "commit": "00d4360fbaaae71b1ee7f93f78dfad4eb7e11479",
+    "enabled": true
+  },
+  {
+    "benchmark name": "noir_bignum_bn254_fq_eq",
+    "path": "libs/datatypes/noir_bignum/bench/bn254_fq_eq",
+    "repository": "https://github.com/noir-lang/noir-bignum",
+    "commit": "00d4360fbaaae71b1ee7f93f78dfad4eb7e11479",
+    "enabled": true
+  },
+  {
+    "benchmark name": "noir_bignum_bn254_fq_from_field",
+    "path": "libs/datatypes/noir_bignum/bench/bn254_fq_from_field",
+    "repository": "https://github.com/noir-lang/noir-bignum",
+    "commit": "00d4360fbaaae71b1ee7f93f78dfad4eb7e11479",
+    "enabled": true
+  },
+  {
+    "benchmark name": "noir_bignum_bn254_fq_to_be_bytes",
+    "path": "libs/datatypes/noir_bignum/bench/bn254_fq_to_be_bytes",
+    "repository": "https://github.com/noir-lang/noir-bignum",
+    "commit": "00d4360fbaaae71b1ee7f93f78dfad4eb7e11479",
+    "enabled": true
+  },
+  {
+    "benchmark name": "noir_bignum_bn254_fq_from_be_bytes",
+    "path": "libs/datatypes/noir_bignum/bench/bn254_fq_from_be_bytes",
+    "repository": "https://github.com/noir-lang/noir-bignum",
+    "commit": "00d4360fbaaae71b1ee7f93f78dfad4eb7e11479",
+    "enabled": true
+  },
+  {
+    "benchmark name": "noir_bignum_bn254_fq_derive_from_seed",
+    "path": "libs/datatypes/noir_bignum/bench/bn254_fq_derive_from_seed",
+    "repository": "https://github.com/noir-lang/noir-bignum",
+    "commit": "00d4360fbaaae71b1ee7f93f78dfad4eb7e11479",
+    "enabled": true
+  },
+  {
+    "benchmark name": "noir_bignum_bn254_fq_batch_invert_10",
+    "path": "libs/datatypes/noir_bignum/bench/bn254_fq_batch_invert_10",
+    "repository": "https://github.com/noir-lang/noir-bignum",
+    "commit": "00d4360fbaaae71b1ee7f93f78dfad4eb7e11479",
+    "enabled": true
+  },
+  {
+    "benchmark name": "noir_bignum_u256_udiv_mod",
+    "path": "libs/datatypes/noir_bignum/bench/u256_udiv_mod",
+    "repository": "https://github.com/noir-lang/noir-bignum",
+    "commit": "00d4360fbaaae71b1ee7f93f78dfad4eb7e11479",
+    "enabled": true
+  },
+  {
+    "benchmark name": "noir_bignum_u256_udiv",
+    "path": "libs/datatypes/noir_bignum/bench/u256_udiv",
+    "repository": "https://github.com/noir-lang/noir-bignum",
+    "commit": "00d4360fbaaae71b1ee7f93f78dfad4eb7e11479",
+    "enabled": true
+  },
+  {
+    "benchmark name": "noir_bignum_u256_cmp",
+    "path": "libs/datatypes/noir_bignum/bench/u256_cmp",
+    "repository": "https://github.com/noir-lang/noir-bignum",
+    "commit": "00d4360fbaaae71b1ee7f93f78dfad4eb7e11479",
+    "enabled": true
+  },
+  {
+    "benchmark name": "noir_bignum_u256_validate_in_range",
+    "path": "libs/datatypes/noir_bignum/bench/u256_validate_in_range",
+    "repository": "https://github.com/noir-lang/noir-bignum",
+    "commit": "00d4360fbaaae71b1ee7f93f78dfad4eb7e11479",
+    "enabled": true
+  },
+  {
+    "benchmark name": "noir_bignum_u256_evaluate_quadratic_expression_3",
+    "path": "libs/datatypes/noir_bignum/bench/u256_evaluate_quadratic_expression_3",
+    "repository": "https://github.com/noir-lang/noir-bignum",
+    "commit": "00d4360fbaaae71b1ee7f93f78dfad4eb7e11479",
+    "enabled": true
+  },
+  {
+    "benchmark name": "noir_bignum_u2048_mul",
+    "path": "libs/datatypes/noir_bignum/bench/u2048_mul",
+    "repository": "https://github.com/noir-lang/noir-bignum",
+    "commit": "00d4360fbaaae71b1ee7f93f78dfad4eb7e11479",
+    "enabled": true
+  },
+  {
     "benchmark name": "payy",
     "path": "applications/payy",
     "repository": "https://github.com/polybase/payy",
