@@ -301,6 +301,13 @@
     "enabled": false
   },
   {
+    "benchmark name": "noir_eddsa_poseidon",
+    "path": "libs/cryptography/noir_eddsa/bench/eddsa_poseidon",
+    "repository": "https://github.com/noir-lang/eddsa",
+    "commit": "eb103ec311bf26c0d6e9da12a8ff4850968a9104",
+    "enabled": true
+  },
+  {
     "benchmark name": "noir_eth-proofs_get_account",
     "path": "libs/cryptography/noir_eth-proofs/get_account",
     "repository": "https://github.com/noir-lang/eth-proofs",
