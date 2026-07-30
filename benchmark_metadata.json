@@ -805,6 +805,34 @@
     "enabled": true
   },
   {
+    "benchmark name": "noir_string_search_match_32_32",
+    "path": "libs/encoding/noir_string_search/bench/match_32_32",
+    "repository": "https://github.com/noir-lang/noir_string_search",
+    "commit": "2236098205b6f3bc538cf0311d9b22c8f397f554",
+    "enabled": true
+  },
+  {
+    "benchmark name": "noir_string_search_match_128_32",
+    "path": "libs/encoding/noir_string_search/bench/match_128_32",
+    "repository": "https://github.com/noir-lang/noir_string_search",
+    "commit": "2236098205b6f3bc538cf0311d9b22c8f397f554",
+    "enabled": true
+  },
+  {
+    "benchmark name": "noir_string_search_match_512_64",
+    "path": "libs/encoding/noir_string_search/bench/match_512_64",
+    "repository": "https://github.com/noir-lang/noir_string_search",
+    "commit": "2236098205b6f3bc538cf0311d9b22c8f397f554",
+    "enabled": true
+  },
+  {
+    "benchmark name": "noir_string_search_match_1024_128",
+    "path": "libs/encoding/noir_string_search/bench/match_1024_128",
+    "repository": "https://github.com/noir-lang/noir_string_search",
+    "commit": "2236098205b6f3bc538cf0311d9b22c8f397f554",
+    "enabled": true
+  },
+  {
     "benchmark name": "payy",
     "path": "applications/payy",
     "repository": "https://github.com/polybase/payy",
