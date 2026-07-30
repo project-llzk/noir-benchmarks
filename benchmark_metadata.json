@@ -301,6 +301,55 @@
     "enabled": false
   },
   {
+    "benchmark name": "noir_eth-proofs_get_account",
+    "path": "libs/cryptography/noir_eth-proofs/get_account",
+    "repository": "https://github.com/noir-lang/eth-proofs",
+    "commit": "b0962c951782c97c2a634bdbe94966a15634ece8",
+    "enabled": false
+  },
+  {
+    "benchmark name": "noir_eth-proofs_get_header",
+    "path": "libs/cryptography/noir_eth-proofs/get_header",
+    "repository": "https://github.com/noir-lang/eth-proofs",
+    "commit": "b0962c951782c97c2a634bdbe94966a15634ece8",
+    "enabled": false
+  },
+  {
+    "benchmark name": "noir_eth-proofs_get_log",
+    "path": "libs/cryptography/noir_eth-proofs/get_log",
+    "repository": "https://github.com/noir-lang/eth-proofs",
+    "commit": "b0962c951782c97c2a634bdbe94966a15634ece8",
+    "enabled": false
+  },
+  {
+    "benchmark name": "noir_eth-proofs_get_receipt",
+    "path": "libs/cryptography/noir_eth-proofs/get_receipt",
+    "repository": "https://github.com/noir-lang/eth-proofs",
+    "commit": "b0962c951782c97c2a634bdbe94966a15634ece8",
+    "enabled": false
+  },
+  {
+    "benchmark name": "noir_eth-proofs_get_storage",
+    "path": "libs/cryptography/noir_eth-proofs/get_storage",
+    "repository": "https://github.com/noir-lang/eth-proofs",
+    "commit": "b0962c951782c97c2a634bdbe94966a15634ece8",
+    "enabled": false
+  },
+  {
+    "benchmark name": "noir_eth-proofs_get_storage_recursive",
+    "path": "libs/cryptography/noir_eth-proofs/get_storage_recursive",
+    "repository": "https://github.com/noir-lang/eth-proofs",
+    "commit": "b0962c951782c97c2a634bdbe94966a15634ece8",
+    "enabled": false
+  },
+  {
+    "benchmark name": "noir_eth-proofs_get_transaction",
+    "path": "libs/cryptography/noir_eth-proofs/get_transaction",
+    "repository": "https://github.com/noir-lang/eth-proofs",
+    "commit": "b0962c951782c97c2a634bdbe94966a15634ece8",
+    "enabled": false
+  },
+  {
     "benchmark name": "payy",
     "path": "applications/payy",
     "repository": "https://github.com/polybase/payy",
