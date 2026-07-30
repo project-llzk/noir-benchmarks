@@ -1,0 +1,8 @@
+[package]
+name = "zkpassport_date_to_bytes"
+type = "bin"
+authors = [""]
+compiler_version = ">=0.22.0"
+
+[dependencies]
+noir_date = { path = "../../lib" }

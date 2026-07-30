@@ -595,6 +595,76 @@
     "enabled": true
   },
   {
+    "benchmark name": "zkpassport_date_from_bytes_long_year",
+    "path": "libs/datatypes/zkpassport_date/bench/date_from_bytes_long_year",
+    "repository": "https://github.com/zkpassport/noir-date",
+    "commit": "ca9029869819c567c7b533e4b13d9ed47f2b7db3",
+    "enabled": true
+  },
+  {
+    "benchmark name": "zkpassport_date_from_bytes_short_year",
+    "path": "libs/datatypes/zkpassport_date/bench/date_from_bytes_short_year",
+    "repository": "https://github.com/zkpassport/noir-date",
+    "commit": "ca9029869819c567c7b533e4b13d9ed47f2b7db3",
+    "enabled": true
+  },
+  {
+    "benchmark name": "zkpassport_date_to_bytes",
+    "path": "libs/datatypes/zkpassport_date/bench/date_to_bytes",
+    "repository": "https://github.com/zkpassport/noir-date",
+    "commit": "ca9029869819c567c7b533e4b13d9ed47f2b7db3",
+    "enabled": true
+  },
+  {
+    "benchmark name": "zkpassport_date_from_timestamp",
+    "path": "libs/datatypes/zkpassport_date/bench/date_from_timestamp",
+    "repository": "https://github.com/zkpassport/noir-date",
+    "commit": "ca9029869819c567c7b533e4b13d9ed47f2b7db3",
+    "enabled": true
+  },
+  {
+    "benchmark name": "zkpassport_date_to_timestamp",
+    "path": "libs/datatypes/zkpassport_date/bench/date_to_timestamp",
+    "repository": "https://github.com/zkpassport/noir-date",
+    "commit": "ca9029869819c567c7b533e4b13d9ed47f2b7db3",
+    "enabled": true
+  },
+  {
+    "benchmark name": "zkpassport_date_add_days",
+    "path": "libs/datatypes/zkpassport_date/bench/date_add_days",
+    "repository": "https://github.com/zkpassport/noir-date",
+    "commit": "ca9029869819c567c7b533e4b13d9ed47f2b7db3",
+    "enabled": true
+  },
+  {
+    "benchmark name": "zkpassport_date_sub_days",
+    "path": "libs/datatypes/zkpassport_date/bench/date_sub_days",
+    "repository": "https://github.com/zkpassport/noir-date",
+    "commit": "ca9029869819c567c7b533e4b13d9ed47f2b7db3",
+    "enabled": true
+  },
+  {
+    "benchmark name": "zkpassport_date_add_months",
+    "path": "libs/datatypes/zkpassport_date/bench/date_add_months",
+    "repository": "https://github.com/zkpassport/noir-date",
+    "commit": "ca9029869819c567c7b533e4b13d9ed47f2b7db3",
+    "enabled": true
+  },
+  {
+    "benchmark name": "zkpassport_date_duration_in_days",
+    "path": "libs/datatypes/zkpassport_date/bench/date_duration_in_days",
+    "repository": "https://github.com/zkpassport/noir-date",
+    "commit": "ca9029869819c567c7b533e4b13d9ed47f2b7db3",
+    "enabled": true
+  },
+  {
+    "benchmark name": "zkpassport_date_gt",
+    "path": "libs/datatypes/zkpassport_date/bench/date_gt",
+    "repository": "https://github.com/zkpassport/noir-date",
+    "commit": "ca9029869819c567c7b533e4b13d9ed47f2b7db3",
+    "enabled": true
+  },
+  {
     "benchmark name": "payy",
     "path": "applications/payy",
     "repository": "https://github.com/polybase/payy",
