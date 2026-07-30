@@ -357,6 +357,62 @@
     "enabled": false
   },
   {
+    "benchmark name": "wei-as-decimal_from_u128",
+    "path": "libs/datatypes/merkle_wad/bench/wad_from_u128",
+    "repository": "https://github.com/merkle-groot/wad.nr",
+    "commit": "541555c80e5864de1ec74bdf6d8602e020848438",
+    "enabled": true
+  },
+  {
+    "benchmark name": "wei-as-decimal_to_wad",
+    "path": "libs/datatypes/merkle_wad/bench/wad_to_wad",
+    "repository": "https://github.com/merkle-groot/wad.nr",
+    "commit": "541555c80e5864de1ec74bdf6d8602e020848438",
+    "enabled": true
+  },
+  {
+    "benchmark name": "wei-as-decimal_truncate",
+    "path": "libs/datatypes/merkle_wad/bench/wad_truncate",
+    "repository": "https://github.com/merkle-groot/wad.nr",
+    "commit": "541555c80e5864de1ec74bdf6d8602e020848438",
+    "enabled": true
+  },
+  {
+    "benchmark name": "wei-as-decimal_wad_add",
+    "path": "libs/datatypes/merkle_wad/bench/wad_add",
+    "repository": "https://github.com/merkle-groot/wad.nr",
+    "commit": "541555c80e5864de1ec74bdf6d8602e020848438",
+    "enabled": true
+  },
+  {
+    "benchmark name": "wei-as-decimal_wad_sub",
+    "path": "libs/datatypes/merkle_wad/bench/wad_sub",
+    "repository": "https://github.com/merkle-groot/wad.nr",
+    "commit": "541555c80e5864de1ec74bdf6d8602e020848438",
+    "enabled": true
+  },
+  {
+    "benchmark name": "wei-as-decimal_wad_mul",
+    "path": "libs/datatypes/merkle_wad/bench/wad_mul",
+    "repository": "https://github.com/merkle-groot/wad.nr",
+    "commit": "541555c80e5864de1ec74bdf6d8602e020848438",
+    "enabled": true
+  },
+  {
+    "benchmark name": "wei-as-decimal_wad_div",
+    "path": "libs/datatypes/merkle_wad/bench/wad_div",
+    "repository": "https://github.com/merkle-groot/wad.nr",
+    "commit": "541555c80e5864de1ec74bdf6d8602e020848438",
+    "enabled": true
+  },
+  {
+    "benchmark name": "wei-as-decimal_wad_mul_div",
+    "path": "libs/datatypes/merkle_wad/bench/wad_mul_div",
+    "repository": "https://github.com/merkle-groot/wad.nr",
+    "commit": "541555c80e5864de1ec74bdf6d8602e020848438",
+    "enabled": true
+  },
+  {
     "benchmark name": "payy",
     "path": "applications/payy",
     "repository": "https://github.com/polybase/payy",

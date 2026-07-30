@@ -1,0 +1,8 @@
+[package]
+name = "wei_as_decimal_truncate"
+type = "bin"
+authors = [""]
+compiler_version = ">=0.18.0"
+
+[dependencies]
+wad_lib = { path = "../../lib" }
