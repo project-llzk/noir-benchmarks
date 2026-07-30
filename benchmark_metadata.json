@@ -665,6 +665,76 @@
     "enabled": true
   },
   {
+    "benchmark name": "noir_base64_encode_610",
+    "path": "libs/encoding/noir_base64/bench/encode_610",
+    "repository": "https://github.com/noir-lang/noir_base64",
+    "commit": "4200d5ffb1d4416f336c392ed7f3f729facbc2ad",
+    "enabled": true
+  },
+  {
+    "benchmark name": "noir_base64_encode_610_url_safe",
+    "path": "libs/encoding/noir_base64/bench/encode_610_url_safe",
+    "repository": "https://github.com/noir-lang/noir_base64",
+    "commit": "4200d5ffb1d4416f336c392ed7f3f729facbc2ad",
+    "enabled": true
+  },
+  {
+    "benchmark name": "noir_base64_encode_610_var",
+    "path": "libs/encoding/noir_base64/bench/encode_610_var",
+    "repository": "https://github.com/noir-lang/noir_base64",
+    "commit": "4200d5ffb1d4416f336c392ed7f3f729facbc2ad",
+    "enabled": true
+  },
+  {
+    "benchmark name": "noir_base64_encode_610_url_safe_var",
+    "path": "libs/encoding/noir_base64/bench/encode_610_url_safe_var",
+    "repository": "https://github.com/noir-lang/noir_base64",
+    "commit": "4200d5ffb1d4416f336c392ed7f3f729facbc2ad",
+    "enabled": true
+  },
+  {
+    "benchmark name": "noir_base64_encode_610_no_pad",
+    "path": "libs/encoding/noir_base64/bench/encode_610_no_pad",
+    "repository": "https://github.com/noir-lang/noir_base64",
+    "commit": "4200d5ffb1d4416f336c392ed7f3f729facbc2ad",
+    "enabled": true
+  },
+  {
+    "benchmark name": "noir_base64_encode_610_var_no_pad",
+    "path": "libs/encoding/noir_base64/bench/encode_610_var_no_pad",
+    "repository": "https://github.com/noir-lang/noir_base64",
+    "commit": "4200d5ffb1d4416f336c392ed7f3f729facbc2ad",
+    "enabled": true
+  },
+  {
+    "benchmark name": "noir_base64_decode_610",
+    "path": "libs/encoding/noir_base64/bench/decode_610",
+    "repository": "https://github.com/noir-lang/noir_base64",
+    "commit": "4200d5ffb1d4416f336c392ed7f3f729facbc2ad",
+    "enabled": true
+  },
+  {
+    "benchmark name": "noir_base64_decode_610_var",
+    "path": "libs/encoding/noir_base64/bench/decode_610_var",
+    "repository": "https://github.com/noir-lang/noir_base64",
+    "commit": "4200d5ffb1d4416f336c392ed7f3f729facbc2ad",
+    "enabled": true
+  },
+  {
+    "benchmark name": "noir_base64_decode_610_no_pad",
+    "path": "libs/encoding/noir_base64/bench/decode_610_no_pad",
+    "repository": "https://github.com/noir-lang/noir_base64",
+    "commit": "4200d5ffb1d4416f336c392ed7f3f729facbc2ad",
+    "enabled": true
+  },
+  {
+    "benchmark name": "noir_base64_decode_610_var_no_pad",
+    "path": "libs/encoding/noir_base64/bench/decode_610_var_no_pad",
+    "repository": "https://github.com/noir-lang/noir_base64",
+    "commit": "4200d5ffb1d4416f336c392ed7f3f729facbc2ad",
+    "enabled": true
+  },
+  {
     "benchmark name": "payy",
     "path": "applications/payy",
     "repository": "https://github.com/polybase/payy",
