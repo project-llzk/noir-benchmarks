@@ -525,6 +525,76 @@
     "enabled": true
   },
   {
+    "benchmark name": "sparq_IEEE754_f16_add",
+    "path": "libs/datatypes/sparq_IEEE754/bench/f16_add",
+    "repository": "https://github.com/sparq-org/noir_IEEE754",
+    "commit": "e2ad62bd8579ff8c461add9e148e636471432172",
+    "enabled": true
+  },
+  {
+    "benchmark name": "sparq_IEEE754_f16_mul",
+    "path": "libs/datatypes/sparq_IEEE754/bench/f16_mul",
+    "repository": "https://github.com/sparq-org/noir_IEEE754",
+    "commit": "e2ad62bd8579ff8c461add9e148e636471432172",
+    "enabled": true
+  },
+  {
+    "benchmark name": "sparq_IEEE754_f16_compare",
+    "path": "libs/datatypes/sparq_IEEE754/bench/f16_compare",
+    "repository": "https://github.com/sparq-org/noir_IEEE754",
+    "commit": "e2ad62bd8579ff8c461add9e148e636471432172",
+    "enabled": true
+  },
+  {
+    "benchmark name": "sparq_IEEE754_f32_div",
+    "path": "libs/datatypes/sparq_IEEE754/bench/f32_div",
+    "repository": "https://github.com/sparq-org/noir_IEEE754",
+    "commit": "e2ad62bd8579ff8c461add9e148e636471432172",
+    "enabled": true
+  },
+  {
+    "benchmark name": "sparq_IEEE754_f32_round_ties_even",
+    "path": "libs/datatypes/sparq_IEEE754/bench/f32_round_ties_even",
+    "repository": "https://github.com/sparq-org/noir_IEEE754",
+    "commit": "e2ad62bd8579ff8c461add9e148e636471432172",
+    "enabled": true
+  },
+  {
+    "benchmark name": "sparq_IEEE754_f64_sqrt",
+    "path": "libs/datatypes/sparq_IEEE754/bench/f64_sqrt",
+    "repository": "https://github.com/sparq-org/noir_IEEE754",
+    "commit": "e2ad62bd8579ff8c461add9e148e636471432172",
+    "enabled": true
+  },
+  {
+    "benchmark name": "sparq_IEEE754_f64_to_i64",
+    "path": "libs/datatypes/sparq_IEEE754/bench/f64_to_i64",
+    "repository": "https://github.com/sparq-org/noir_IEEE754",
+    "commit": "e2ad62bd8579ff8c461add9e148e636471432172",
+    "enabled": true
+  },
+  {
+    "benchmark name": "sparq_IEEE754_f128_mul",
+    "path": "libs/datatypes/sparq_IEEE754/bench/f128_mul",
+    "repository": "https://github.com/sparq-org/noir_IEEE754",
+    "commit": "e2ad62bd8579ff8c461add9e148e636471432172",
+    "enabled": true
+  },
+  {
+    "benchmark name": "sparq_IEEE754_f128_div",
+    "path": "libs/datatypes/sparq_IEEE754/bench/f128_div",
+    "repository": "https://github.com/sparq-org/noir_IEEE754",
+    "commit": "e2ad62bd8579ff8c461add9e148e636471432172",
+    "enabled": true
+  },
+  {
+    "benchmark name": "sparq_IEEE754_f128_from_u128",
+    "path": "libs/datatypes/sparq_IEEE754/bench/f128_from_u128",
+    "repository": "https://github.com/sparq-org/noir_IEEE754",
+    "commit": "e2ad62bd8579ff8c461add9e148e636471432172",
+    "enabled": true
+  },
+  {
     "benchmark name": "payy",
     "path": "applications/payy",
     "repository": "https://github.com/polybase/payy",
