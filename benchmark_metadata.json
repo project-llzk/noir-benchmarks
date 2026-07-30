@@ -735,6 +735,76 @@
     "enabled": true
   },
   {
+    "benchmark name": "noir_json_parser_parse_512b",
+    "path": "libs/encoding/noir_json_parser/bench/parse_512b",
+    "repository": "https://github.com/noir-lang/noir_json_parser",
+    "commit": "b37c06b9a5a619655b23a2164ace351aa5492ad8",
+    "enabled": true
+  },
+  {
+    "benchmark name": "noir_json_parser_parse_1kb",
+    "path": "libs/encoding/noir_json_parser/bench/parse_1kb",
+    "repository": "https://github.com/noir-lang/noir_json_parser",
+    "commit": "b37c06b9a5a619655b23a2164ace351aa5492ad8",
+    "enabled": true
+  },
+  {
+    "benchmark name": "noir_json_parser_parse_2kb",
+    "path": "libs/encoding/noir_json_parser/bench/parse_2kb",
+    "repository": "https://github.com/noir-lang/noir_json_parser",
+    "commit": "b37c06b9a5a619655b23a2164ace351aa5492ad8",
+    "enabled": true
+  },
+  {
+    "benchmark name": "noir_json_parser_parse_4kb",
+    "path": "libs/encoding/noir_json_parser/bench/parse_4kb",
+    "repository": "https://github.com/noir-lang/noir_json_parser",
+    "commit": "b37c06b9a5a619655b23a2164ace351aa5492ad8",
+    "enabled": true
+  },
+  {
+    "benchmark name": "noir_json_parser_parse_8kb",
+    "path": "libs/encoding/noir_json_parser/bench/parse_8kb",
+    "repository": "https://github.com/noir-lang/noir_json_parser",
+    "commit": "b37c06b9a5a619655b23a2164ace351aa5492ad8",
+    "enabled": true
+  },
+  {
+    "benchmark name": "noir_json_parser_parse_16kb",
+    "path": "libs/encoding/noir_json_parser/bench/parse_16kb",
+    "repository": "https://github.com/noir-lang/noir_json_parser",
+    "commit": "b37c06b9a5a619655b23a2164ace351aa5492ad8",
+    "enabled": true
+  },
+  {
+    "benchmark name": "noir_json_parser_get_number",
+    "path": "libs/encoding/noir_json_parser/bench/get_number",
+    "repository": "https://github.com/noir-lang/noir_json_parser",
+    "commit": "b37c06b9a5a619655b23a2164ace351aa5492ad8",
+    "enabled": true
+  },
+  {
+    "benchmark name": "noir_json_parser_get_string",
+    "path": "libs/encoding/noir_json_parser/bench/get_string",
+    "repository": "https://github.com/noir-lang/noir_json_parser",
+    "commit": "b37c06b9a5a619655b23a2164ace351aa5492ad8",
+    "enabled": true
+  },
+  {
+    "benchmark name": "noir_json_parser_get_nested_object_number",
+    "path": "libs/encoding/noir_json_parser/bench/get_nested_object_number",
+    "repository": "https://github.com/noir-lang/noir_json_parser",
+    "commit": "b37c06b9a5a619655b23a2164ace351aa5492ad8",
+    "enabled": true
+  },
+  {
+    "benchmark name": "noir_json_parser_get_array_length",
+    "path": "libs/encoding/noir_json_parser/bench/get_array_length",
+    "repository": "https://github.com/noir-lang/noir_json_parser",
+    "commit": "b37c06b9a5a619655b23a2164ace351aa5492ad8",
+    "enabled": true
+  },
+  {
     "benchmark name": "payy",
     "path": "applications/payy",
     "repository": "https://github.com/polybase/payy",

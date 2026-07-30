@@ -1,0 +1,8 @@
+[package]
+name = "noir_json_parser_parse_4kb"
+type = "bin"
+authors = [""]
+compiler_version = ">=0.37.0"
+
+[dependencies]
+json_parser = { path = "../../lib" }
