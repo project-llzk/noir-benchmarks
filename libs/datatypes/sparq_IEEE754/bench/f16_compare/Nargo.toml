@@ -1,0 +1,8 @@
+[package]
+name = "sparq_ieee754_f16_compare"
+type = "bin"
+authors = [""]
+compiler_version = ">=1.0.0"
+
+[dependencies]
+sparq_ieee754 = { path = "../../lib" }

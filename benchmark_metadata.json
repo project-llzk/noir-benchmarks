@@ -357,6 +357,314 @@
     "enabled": false
   },
   {
+    "benchmark name": "wei-as-decimal_from_u128",
+    "path": "libs/datatypes/merkle_wad/bench/wad_from_u128",
+    "repository": "https://github.com/merkle-groot/wad.nr",
+    "commit": "541555c80e5864de1ec74bdf6d8602e020848438",
+    "enabled": true
+  },
+  {
+    "benchmark name": "wei-as-decimal_to_wad",
+    "path": "libs/datatypes/merkle_wad/bench/wad_to_wad",
+    "repository": "https://github.com/merkle-groot/wad.nr",
+    "commit": "541555c80e5864de1ec74bdf6d8602e020848438",
+    "enabled": true
+  },
+  {
+    "benchmark name": "wei-as-decimal_truncate",
+    "path": "libs/datatypes/merkle_wad/bench/wad_truncate",
+    "repository": "https://github.com/merkle-groot/wad.nr",
+    "commit": "541555c80e5864de1ec74bdf6d8602e020848438",
+    "enabled": true
+  },
+  {
+    "benchmark name": "wei-as-decimal_wad_add",
+    "path": "libs/datatypes/merkle_wad/bench/wad_add",
+    "repository": "https://github.com/merkle-groot/wad.nr",
+    "commit": "541555c80e5864de1ec74bdf6d8602e020848438",
+    "enabled": true
+  },
+  {
+    "benchmark name": "wei-as-decimal_wad_sub",
+    "path": "libs/datatypes/merkle_wad/bench/wad_sub",
+    "repository": "https://github.com/merkle-groot/wad.nr",
+    "commit": "541555c80e5864de1ec74bdf6d8602e020848438",
+    "enabled": true
+  },
+  {
+    "benchmark name": "wei-as-decimal_wad_mul",
+    "path": "libs/datatypes/merkle_wad/bench/wad_mul",
+    "repository": "https://github.com/merkle-groot/wad.nr",
+    "commit": "541555c80e5864de1ec74bdf6d8602e020848438",
+    "enabled": true
+  },
+  {
+    "benchmark name": "wei-as-decimal_wad_div",
+    "path": "libs/datatypes/merkle_wad/bench/wad_div",
+    "repository": "https://github.com/merkle-groot/wad.nr",
+    "commit": "541555c80e5864de1ec74bdf6d8602e020848438",
+    "enabled": true
+  },
+  {
+    "benchmark name": "wei-as-decimal_wad_mul_div",
+    "path": "libs/datatypes/merkle_wad/bench/wad_mul_div",
+    "repository": "https://github.com/merkle-groot/wad.nr",
+    "commit": "541555c80e5864de1ec74bdf6d8602e020848438",
+    "enabled": true
+  },
+  {
+    "benchmark name": "noir_bignum_bn254_fq_add",
+    "path": "libs/datatypes/noir_bignum/bench/bn254_fq_add",
+    "repository": "https://github.com/noir-lang/noir-bignum",
+    "commit": "00d4360fbaaae71b1ee7f93f78dfad4eb7e11479",
+    "enabled": true
+  },
+  {
+    "benchmark name": "noir_bignum_bn254_fq_sub",
+    "path": "libs/datatypes/noir_bignum/bench/bn254_fq_sub",
+    "repository": "https://github.com/noir-lang/noir-bignum",
+    "commit": "00d4360fbaaae71b1ee7f93f78dfad4eb7e11479",
+    "enabled": true
+  },
+  {
+    "benchmark name": "noir_bignum_bn254_fq_mul",
+    "path": "libs/datatypes/noir_bignum/bench/bn254_fq_mul",
+    "repository": "https://github.com/noir-lang/noir-bignum",
+    "commit": "00d4360fbaaae71b1ee7f93f78dfad4eb7e11479",
+    "enabled": true
+  },
+  {
+    "benchmark name": "noir_bignum_bn254_fq_div",
+    "path": "libs/datatypes/noir_bignum/bench/bn254_fq_div",
+    "repository": "https://github.com/noir-lang/noir-bignum",
+    "commit": "00d4360fbaaae71b1ee7f93f78dfad4eb7e11479",
+    "enabled": true
+  },
+  {
+    "benchmark name": "noir_bignum_bn254_fq_eq",
+    "path": "libs/datatypes/noir_bignum/bench/bn254_fq_eq",
+    "repository": "https://github.com/noir-lang/noir-bignum",
+    "commit": "00d4360fbaaae71b1ee7f93f78dfad4eb7e11479",
+    "enabled": true
+  },
+  {
+    "benchmark name": "noir_bignum_bn254_fq_from_field",
+    "path": "libs/datatypes/noir_bignum/bench/bn254_fq_from_field",
+    "repository": "https://github.com/noir-lang/noir-bignum",
+    "commit": "00d4360fbaaae71b1ee7f93f78dfad4eb7e11479",
+    "enabled": true
+  },
+  {
+    "benchmark name": "noir_bignum_bn254_fq_to_be_bytes",
+    "path": "libs/datatypes/noir_bignum/bench/bn254_fq_to_be_bytes",
+    "repository": "https://github.com/noir-lang/noir-bignum",
+    "commit": "00d4360fbaaae71b1ee7f93f78dfad4eb7e11479",
+    "enabled": true
+  },
+  {
+    "benchmark name": "noir_bignum_bn254_fq_from_be_bytes",
+    "path": "libs/datatypes/noir_bignum/bench/bn254_fq_from_be_bytes",
+    "repository": "https://github.com/noir-lang/noir-bignum",
+    "commit": "00d4360fbaaae71b1ee7f93f78dfad4eb7e11479",
+    "enabled": true
+  },
+  {
+    "benchmark name": "noir_bignum_bn254_fq_derive_from_seed",
+    "path": "libs/datatypes/noir_bignum/bench/bn254_fq_derive_from_seed",
+    "repository": "https://github.com/noir-lang/noir-bignum",
+    "commit": "00d4360fbaaae71b1ee7f93f78dfad4eb7e11479",
+    "enabled": true
+  },
+  {
+    "benchmark name": "noir_bignum_bn254_fq_batch_invert_10",
+    "path": "libs/datatypes/noir_bignum/bench/bn254_fq_batch_invert_10",
+    "repository": "https://github.com/noir-lang/noir-bignum",
+    "commit": "00d4360fbaaae71b1ee7f93f78dfad4eb7e11479",
+    "enabled": true
+  },
+  {
+    "benchmark name": "noir_bignum_u256_udiv_mod",
+    "path": "libs/datatypes/noir_bignum/bench/u256_udiv_mod",
+    "repository": "https://github.com/noir-lang/noir-bignum",
+    "commit": "00d4360fbaaae71b1ee7f93f78dfad4eb7e11479",
+    "enabled": true
+  },
+  {
+    "benchmark name": "noir_bignum_u256_udiv",
+    "path": "libs/datatypes/noir_bignum/bench/u256_udiv",
+    "repository": "https://github.com/noir-lang/noir-bignum",
+    "commit": "00d4360fbaaae71b1ee7f93f78dfad4eb7e11479",
+    "enabled": true
+  },
+  {
+    "benchmark name": "noir_bignum_u256_cmp",
+    "path": "libs/datatypes/noir_bignum/bench/u256_cmp",
+    "repository": "https://github.com/noir-lang/noir-bignum",
+    "commit": "00d4360fbaaae71b1ee7f93f78dfad4eb7e11479",
+    "enabled": true
+  },
+  {
+    "benchmark name": "noir_bignum_u256_validate_in_range",
+    "path": "libs/datatypes/noir_bignum/bench/u256_validate_in_range",
+    "repository": "https://github.com/noir-lang/noir-bignum",
+    "commit": "00d4360fbaaae71b1ee7f93f78dfad4eb7e11479",
+    "enabled": true
+  },
+  {
+    "benchmark name": "noir_bignum_u256_evaluate_quadratic_expression_3",
+    "path": "libs/datatypes/noir_bignum/bench/u256_evaluate_quadratic_expression_3",
+    "repository": "https://github.com/noir-lang/noir-bignum",
+    "commit": "00d4360fbaaae71b1ee7f93f78dfad4eb7e11479",
+    "enabled": true
+  },
+  {
+    "benchmark name": "noir_bignum_u2048_mul",
+    "path": "libs/datatypes/noir_bignum/bench/u2048_mul",
+    "repository": "https://github.com/noir-lang/noir-bignum",
+    "commit": "00d4360fbaaae71b1ee7f93f78dfad4eb7e11479",
+    "enabled": true
+  },
+  {
+    "benchmark name": "sparq_IEEE754_f16_add",
+    "path": "libs/datatypes/sparq_IEEE754/bench/f16_add",
+    "repository": "https://github.com/sparq-org/noir_IEEE754",
+    "commit": "e2ad62bd8579ff8c461add9e148e636471432172",
+    "enabled": true
+  },
+  {
+    "benchmark name": "sparq_IEEE754_f16_mul",
+    "path": "libs/datatypes/sparq_IEEE754/bench/f16_mul",
+    "repository": "https://github.com/sparq-org/noir_IEEE754",
+    "commit": "e2ad62bd8579ff8c461add9e148e636471432172",
+    "enabled": true
+  },
+  {
+    "benchmark name": "sparq_IEEE754_f16_compare",
+    "path": "libs/datatypes/sparq_IEEE754/bench/f16_compare",
+    "repository": "https://github.com/sparq-org/noir_IEEE754",
+    "commit": "e2ad62bd8579ff8c461add9e148e636471432172",
+    "enabled": true
+  },
+  {
+    "benchmark name": "sparq_IEEE754_f32_div",
+    "path": "libs/datatypes/sparq_IEEE754/bench/f32_div",
+    "repository": "https://github.com/sparq-org/noir_IEEE754",
+    "commit": "e2ad62bd8579ff8c461add9e148e636471432172",
+    "enabled": true
+  },
+  {
+    "benchmark name": "sparq_IEEE754_f32_round_ties_even",
+    "path": "libs/datatypes/sparq_IEEE754/bench/f32_round_ties_even",
+    "repository": "https://github.com/sparq-org/noir_IEEE754",
+    "commit": "e2ad62bd8579ff8c461add9e148e636471432172",
+    "enabled": true
+  },
+  {
+    "benchmark name": "sparq_IEEE754_f64_sqrt",
+    "path": "libs/datatypes/sparq_IEEE754/bench/f64_sqrt",
+    "repository": "https://github.com/sparq-org/noir_IEEE754",
+    "commit": "e2ad62bd8579ff8c461add9e148e636471432172",
+    "enabled": true
+  },
+  {
+    "benchmark name": "sparq_IEEE754_f64_to_i64",
+    "path": "libs/datatypes/sparq_IEEE754/bench/f64_to_i64",
+    "repository": "https://github.com/sparq-org/noir_IEEE754",
+    "commit": "e2ad62bd8579ff8c461add9e148e636471432172",
+    "enabled": true
+  },
+  {
+    "benchmark name": "sparq_IEEE754_f128_mul",
+    "path": "libs/datatypes/sparq_IEEE754/bench/f128_mul",
+    "repository": "https://github.com/sparq-org/noir_IEEE754",
+    "commit": "e2ad62bd8579ff8c461add9e148e636471432172",
+    "enabled": true
+  },
+  {
+    "benchmark name": "sparq_IEEE754_f128_div",
+    "path": "libs/datatypes/sparq_IEEE754/bench/f128_div",
+    "repository": "https://github.com/sparq-org/noir_IEEE754",
+    "commit": "e2ad62bd8579ff8c461add9e148e636471432172",
+    "enabled": true
+  },
+  {
+    "benchmark name": "sparq_IEEE754_f128_from_u128",
+    "path": "libs/datatypes/sparq_IEEE754/bench/f128_from_u128",
+    "repository": "https://github.com/sparq-org/noir_IEEE754",
+    "commit": "e2ad62bd8579ff8c461add9e148e636471432172",
+    "enabled": true
+  },
+  {
+    "benchmark name": "zkpassport_date_from_bytes_long_year",
+    "path": "libs/datatypes/zkpassport_date/bench/date_from_bytes_long_year",
+    "repository": "https://github.com/zkpassport/noir-date",
+    "commit": "ca9029869819c567c7b533e4b13d9ed47f2b7db3",
+    "enabled": true
+  },
+  {
+    "benchmark name": "zkpassport_date_from_bytes_short_year",
+    "path": "libs/datatypes/zkpassport_date/bench/date_from_bytes_short_year",
+    "repository": "https://github.com/zkpassport/noir-date",
+    "commit": "ca9029869819c567c7b533e4b13d9ed47f2b7db3",
+    "enabled": true
+  },
+  {
+    "benchmark name": "zkpassport_date_to_bytes",
+    "path": "libs/datatypes/zkpassport_date/bench/date_to_bytes",
+    "repository": "https://github.com/zkpassport/noir-date",
+    "commit": "ca9029869819c567c7b533e4b13d9ed47f2b7db3",
+    "enabled": true
+  },
+  {
+    "benchmark name": "zkpassport_date_from_timestamp",
+    "path": "libs/datatypes/zkpassport_date/bench/date_from_timestamp",
+    "repository": "https://github.com/zkpassport/noir-date",
+    "commit": "ca9029869819c567c7b533e4b13d9ed47f2b7db3",
+    "enabled": true
+  },
+  {
+    "benchmark name": "zkpassport_date_to_timestamp",
+    "path": "libs/datatypes/zkpassport_date/bench/date_to_timestamp",
+    "repository": "https://github.com/zkpassport/noir-date",
+    "commit": "ca9029869819c567c7b533e4b13d9ed47f2b7db3",
+    "enabled": true
+  },
+  {
+    "benchmark name": "zkpassport_date_add_days",
+    "path": "libs/datatypes/zkpassport_date/bench/date_add_days",
+    "repository": "https://github.com/zkpassport/noir-date",
+    "commit": "ca9029869819c567c7b533e4b13d9ed47f2b7db3",
+    "enabled": true
+  },
+  {
+    "benchmark name": "zkpassport_date_sub_days",
+    "path": "libs/datatypes/zkpassport_date/bench/date_sub_days",
+    "repository": "https://github.com/zkpassport/noir-date",
+    "commit": "ca9029869819c567c7b533e4b13d9ed47f2b7db3",
+    "enabled": true
+  },
+  {
+    "benchmark name": "zkpassport_date_add_months",
+    "path": "libs/datatypes/zkpassport_date/bench/date_add_months",
+    "repository": "https://github.com/zkpassport/noir-date",
+    "commit": "ca9029869819c567c7b533e4b13d9ed47f2b7db3",
+    "enabled": true
+  },
+  {
+    "benchmark name": "zkpassport_date_duration_in_days",
+    "path": "libs/datatypes/zkpassport_date/bench/date_duration_in_days",
+    "repository": "https://github.com/zkpassport/noir-date",
+    "commit": "ca9029869819c567c7b533e4b13d9ed47f2b7db3",
+    "enabled": true
+  },
+  {
+    "benchmark name": "zkpassport_date_gt",
+    "path": "libs/datatypes/zkpassport_date/bench/date_gt",
+    "repository": "https://github.com/zkpassport/noir-date",
+    "commit": "ca9029869819c567c7b533e4b13d9ed47f2b7db3",
+    "enabled": true
+  },
+  {
     "benchmark name": "payy",
     "path": "applications/payy",
     "repository": "https://github.com/polybase/payy",

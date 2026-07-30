@@ -1,0 +1,8 @@
+[package]
+name = "sparq_ieee754_f64_to_i64"
+type = "bin"
+authors = [""]
+compiler_version = ">=1.0.0"
+
+[dependencies]
+sparq_ieee754 = { path = "../../lib" }
