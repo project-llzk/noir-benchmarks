@@ -665,6 +665,230 @@
     "enabled": true
   },
   {
+    "benchmark name": "noir_base64_encode_610",
+    "path": "libs/encoding/noir_base64/bench/encode_610",
+    "repository": "https://github.com/noir-lang/noir_base64",
+    "commit": "4200d5ffb1d4416f336c392ed7f3f729facbc2ad",
+    "enabled": true
+  },
+  {
+    "benchmark name": "noir_base64_encode_610_url_safe",
+    "path": "libs/encoding/noir_base64/bench/encode_610_url_safe",
+    "repository": "https://github.com/noir-lang/noir_base64",
+    "commit": "4200d5ffb1d4416f336c392ed7f3f729facbc2ad",
+    "enabled": true
+  },
+  {
+    "benchmark name": "noir_base64_encode_610_var",
+    "path": "libs/encoding/noir_base64/bench/encode_610_var",
+    "repository": "https://github.com/noir-lang/noir_base64",
+    "commit": "4200d5ffb1d4416f336c392ed7f3f729facbc2ad",
+    "enabled": true
+  },
+  {
+    "benchmark name": "noir_base64_encode_610_url_safe_var",
+    "path": "libs/encoding/noir_base64/bench/encode_610_url_safe_var",
+    "repository": "https://github.com/noir-lang/noir_base64",
+    "commit": "4200d5ffb1d4416f336c392ed7f3f729facbc2ad",
+    "enabled": true
+  },
+  {
+    "benchmark name": "noir_base64_encode_610_no_pad",
+    "path": "libs/encoding/noir_base64/bench/encode_610_no_pad",
+    "repository": "https://github.com/noir-lang/noir_base64",
+    "commit": "4200d5ffb1d4416f336c392ed7f3f729facbc2ad",
+    "enabled": true
+  },
+  {
+    "benchmark name": "noir_base64_encode_610_var_no_pad",
+    "path": "libs/encoding/noir_base64/bench/encode_610_var_no_pad",
+    "repository": "https://github.com/noir-lang/noir_base64",
+    "commit": "4200d5ffb1d4416f336c392ed7f3f729facbc2ad",
+    "enabled": true
+  },
+  {
+    "benchmark name": "noir_base64_decode_610",
+    "path": "libs/encoding/noir_base64/bench/decode_610",
+    "repository": "https://github.com/noir-lang/noir_base64",
+    "commit": "4200d5ffb1d4416f336c392ed7f3f729facbc2ad",
+    "enabled": true
+  },
+  {
+    "benchmark name": "noir_base64_decode_610_var",
+    "path": "libs/encoding/noir_base64/bench/decode_610_var",
+    "repository": "https://github.com/noir-lang/noir_base64",
+    "commit": "4200d5ffb1d4416f336c392ed7f3f729facbc2ad",
+    "enabled": true
+  },
+  {
+    "benchmark name": "noir_base64_decode_610_no_pad",
+    "path": "libs/encoding/noir_base64/bench/decode_610_no_pad",
+    "repository": "https://github.com/noir-lang/noir_base64",
+    "commit": "4200d5ffb1d4416f336c392ed7f3f729facbc2ad",
+    "enabled": true
+  },
+  {
+    "benchmark name": "noir_base64_decode_610_var_no_pad",
+    "path": "libs/encoding/noir_base64/bench/decode_610_var_no_pad",
+    "repository": "https://github.com/noir-lang/noir_base64",
+    "commit": "4200d5ffb1d4416f336c392ed7f3f729facbc2ad",
+    "enabled": true
+  },
+  {
+    "benchmark name": "noir_json_parser_parse_512b",
+    "path": "libs/encoding/noir_json_parser/bench/parse_512b",
+    "repository": "https://github.com/noir-lang/noir_json_parser",
+    "commit": "b37c06b9a5a619655b23a2164ace351aa5492ad8",
+    "enabled": true
+  },
+  {
+    "benchmark name": "noir_json_parser_parse_1kb",
+    "path": "libs/encoding/noir_json_parser/bench/parse_1kb",
+    "repository": "https://github.com/noir-lang/noir_json_parser",
+    "commit": "b37c06b9a5a619655b23a2164ace351aa5492ad8",
+    "enabled": true
+  },
+  {
+    "benchmark name": "noir_json_parser_parse_2kb",
+    "path": "libs/encoding/noir_json_parser/bench/parse_2kb",
+    "repository": "https://github.com/noir-lang/noir_json_parser",
+    "commit": "b37c06b9a5a619655b23a2164ace351aa5492ad8",
+    "enabled": true
+  },
+  {
+    "benchmark name": "noir_json_parser_parse_4kb",
+    "path": "libs/encoding/noir_json_parser/bench/parse_4kb",
+    "repository": "https://github.com/noir-lang/noir_json_parser",
+    "commit": "b37c06b9a5a619655b23a2164ace351aa5492ad8",
+    "enabled": true
+  },
+  {
+    "benchmark name": "noir_json_parser_parse_8kb",
+    "path": "libs/encoding/noir_json_parser/bench/parse_8kb",
+    "repository": "https://github.com/noir-lang/noir_json_parser",
+    "commit": "b37c06b9a5a619655b23a2164ace351aa5492ad8",
+    "enabled": true
+  },
+  {
+    "benchmark name": "noir_json_parser_parse_16kb",
+    "path": "libs/encoding/noir_json_parser/bench/parse_16kb",
+    "repository": "https://github.com/noir-lang/noir_json_parser",
+    "commit": "b37c06b9a5a619655b23a2164ace351aa5492ad8",
+    "enabled": true
+  },
+  {
+    "benchmark name": "noir_json_parser_get_number",
+    "path": "libs/encoding/noir_json_parser/bench/get_number",
+    "repository": "https://github.com/noir-lang/noir_json_parser",
+    "commit": "b37c06b9a5a619655b23a2164ace351aa5492ad8",
+    "enabled": true
+  },
+  {
+    "benchmark name": "noir_json_parser_get_string",
+    "path": "libs/encoding/noir_json_parser/bench/get_string",
+    "repository": "https://github.com/noir-lang/noir_json_parser",
+    "commit": "b37c06b9a5a619655b23a2164ace351aa5492ad8",
+    "enabled": true
+  },
+  {
+    "benchmark name": "noir_json_parser_get_nested_object_number",
+    "path": "libs/encoding/noir_json_parser/bench/get_nested_object_number",
+    "repository": "https://github.com/noir-lang/noir_json_parser",
+    "commit": "b37c06b9a5a619655b23a2164ace351aa5492ad8",
+    "enabled": true
+  },
+  {
+    "benchmark name": "noir_json_parser_get_array_length",
+    "path": "libs/encoding/noir_json_parser/bench/get_array_length",
+    "repository": "https://github.com/noir-lang/noir_json_parser",
+    "commit": "b37c06b9a5a619655b23a2164ace351aa5492ad8",
+    "enabled": true
+  },
+  {
+    "benchmark name": "noir_string_search_match_32_32",
+    "path": "libs/encoding/noir_string_search/bench/match_32_32",
+    "repository": "https://github.com/noir-lang/noir_string_search",
+    "commit": "2236098205b6f3bc538cf0311d9b22c8f397f554",
+    "enabled": true
+  },
+  {
+    "benchmark name": "noir_string_search_match_128_32",
+    "path": "libs/encoding/noir_string_search/bench/match_128_32",
+    "repository": "https://github.com/noir-lang/noir_string_search",
+    "commit": "2236098205b6f3bc538cf0311d9b22c8f397f554",
+    "enabled": true
+  },
+  {
+    "benchmark name": "noir_string_search_match_512_64",
+    "path": "libs/encoding/noir_string_search/bench/match_512_64",
+    "repository": "https://github.com/noir-lang/noir_string_search",
+    "commit": "2236098205b6f3bc538cf0311d9b22c8f397f554",
+    "enabled": true
+  },
+  {
+    "benchmark name": "noir_string_search_match_1024_128",
+    "path": "libs/encoding/noir_string_search/bench/match_1024_128",
+    "repository": "https://github.com/noir-lang/noir_string_search",
+    "commit": "2236098205b6f3bc538cf0311d9b22c8f397f554",
+    "enabled": true
+  },
+  {
+    "benchmark name": "sparq_XPath_numeric_int_ops",
+    "path": "libs/encoding/sparq_XPath/bench/numeric_int_ops",
+    "repository": "https://github.com/sparq-org/noir_XPath",
+    "commit": "0aa74d01f6e17e717c67ef370122ce2f257ce81d",
+    "enabled": true
+  },
+  {
+    "benchmark name": "sparq_XPath_sequence_sort_32",
+    "path": "libs/encoding/sparq_XPath/bench/sequence_sort_32",
+    "repository": "https://github.com/sparq-org/noir_XPath",
+    "commit": "0aa74d01f6e17e717c67ef370122ce2f257ce81d",
+    "enabled": true
+  },
+  {
+    "benchmark name": "sparq_XPath_string_contains_64_8",
+    "path": "libs/encoding/sparq_XPath/bench/string_contains_64_8",
+    "repository": "https://github.com/sparq-org/noir_XPath",
+    "commit": "0aa74d01f6e17e717c67ef370122ce2f257ce81d",
+    "enabled": true
+  },
+  {
+    "benchmark name": "sparq_XPath_string_tokenize_64",
+    "path": "libs/encoding/sparq_XPath/bench/string_tokenize_64",
+    "repository": "https://github.com/sparq-org/noir_XPath",
+    "commit": "0aa74d01f6e17e717c67ef370122ce2f257ce81d",
+    "enabled": true
+  },
+  {
+    "benchmark name": "sparq_XPath_regex_replace_literal",
+    "path": "libs/encoding/sparq_XPath/bench/regex_replace_literal",
+    "repository": "https://github.com/sparq-org/noir_XPath",
+    "commit": "0aa74d01f6e17e717c67ef370122ce2f257ce81d",
+    "enabled": true
+  },
+  {
+    "benchmark name": "sparq_XPath_hash_sha256_64",
+    "path": "libs/encoding/sparq_XPath/bench/hash_sha256_64",
+    "repository": "https://github.com/sparq-org/noir_XPath",
+    "commit": "0aa74d01f6e17e717c67ef370122ce2f257ce81d",
+    "enabled": true
+  },
+  {
+    "benchmark name": "sparq_XPath_date_add_duration",
+    "path": "libs/encoding/sparq_XPath/bench/date_add_duration",
+    "repository": "https://github.com/sparq-org/noir_XPath",
+    "commit": "0aa74d01f6e17e717c67ef370122ce2f257ce81d",
+    "enabled": true
+  },
+  {
+    "benchmark name": "sparq_XPath_json_array_number_512b",
+    "path": "libs/encoding/sparq_XPath/bench/json_array_number_512b",
+    "repository": "https://github.com/sparq-org/noir_XPath",
+    "commit": "0aa74d01f6e17e717c67ef370122ce2f257ce81d",
+    "enabled": true
+  },
+  {
     "benchmark name": "payy",
     "path": "applications/payy",
     "repository": "https://github.com/polybase/payy",
