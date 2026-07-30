@@ -84,6 +84,279 @@
     "enabled": true
   },
   {
+    "benchmark name": "noir_mimc_bn254_1",
+    "path": "libs/cryptography/noir_mimc/bench/mimc_bn254_1",
+    "repository": "https://github.com/noir-lang/mimc",
+    "commit": "68bc75c0d1694aac0e95e4c0be611f9267663882",
+    "enabled": true
+  },
+  {
+    "benchmark name": "noir_mimc_bn254_10",
+    "path": "libs/cryptography/noir_mimc/bench/mimc_bn254_10",
+    "repository": "https://github.com/noir-lang/mimc",
+    "commit": "68bc75c0d1694aac0e95e4c0be611f9267663882",
+    "enabled": true
+  },
+  {
+    "benchmark name": "noir_mimc_bn254_100",
+    "path": "libs/cryptography/noir_mimc/bench/mimc_bn254_100",
+    "repository": "https://github.com/noir-lang/mimc",
+    "commit": "68bc75c0d1694aac0e95e4c0be611f9267663882",
+    "enabled": true
+  },
+  {
+    "benchmark name": "noir_poseidon2_hash_1",
+    "path": "libs/cryptography/noir_poseidon/bench/poseidon2_hash_1",
+    "repository": "https://github.com/noir-lang/poseidon",
+    "commit": "0880c371e88e583d39515fd3f877538657ac41eb",
+    "enabled": true
+  },
+  {
+    "benchmark name": "noir_poseidon2_hash_2",
+    "path": "libs/cryptography/noir_poseidon/bench/poseidon2_hash_2",
+    "repository": "https://github.com/noir-lang/poseidon",
+    "commit": "0880c371e88e583d39515fd3f877538657ac41eb",
+    "enabled": true
+  },
+  {
+    "benchmark name": "noir_poseidon2_hash_4",
+    "path": "libs/cryptography/noir_poseidon/bench/poseidon2_hash_4",
+    "repository": "https://github.com/noir-lang/poseidon",
+    "commit": "0880c371e88e583d39515fd3f877538657ac41eb",
+    "enabled": true
+  },
+  {
+    "benchmark name": "noir_poseidon2_hash_8",
+    "path": "libs/cryptography/noir_poseidon/bench/poseidon2_hash_8",
+    "repository": "https://github.com/noir-lang/poseidon",
+    "commit": "0880c371e88e583d39515fd3f877538657ac41eb",
+    "enabled": true
+  },
+  {
+    "benchmark name": "noir_poseidon2_hash_10",
+    "path": "libs/cryptography/noir_poseidon/bench/poseidon2_hash_10",
+    "repository": "https://github.com/noir-lang/poseidon",
+    "commit": "0880c371e88e583d39515fd3f877538657ac41eb",
+    "enabled": true
+  },
+  {
+    "benchmark name": "noir_poseidon2_hash_20",
+    "path": "libs/cryptography/noir_poseidon/bench/poseidon2_hash_20",
+    "repository": "https://github.com/noir-lang/poseidon",
+    "commit": "0880c371e88e583d39515fd3f877538657ac41eb",
+    "enabled": true
+  },
+  {
+    "benchmark name": "noir_poseidon_hash_1",
+    "path": "libs/cryptography/noir_poseidon/bench/poseidon_hash_1",
+    "repository": "https://github.com/noir-lang/poseidon",
+    "commit": "0880c371e88e583d39515fd3f877538657ac41eb",
+    "enabled": true
+  },
+  {
+    "benchmark name": "noir_poseidon_hash_2",
+    "path": "libs/cryptography/noir_poseidon/bench/poseidon_hash_2",
+    "repository": "https://github.com/noir-lang/poseidon",
+    "commit": "0880c371e88e583d39515fd3f877538657ac41eb",
+    "enabled": true
+  },
+  {
+    "benchmark name": "noir_poseidon_hash_4",
+    "path": "libs/cryptography/noir_poseidon/bench/poseidon_hash_4",
+    "repository": "https://github.com/noir-lang/poseidon",
+    "commit": "0880c371e88e583d39515fd3f877538657ac41eb",
+    "enabled": true
+  },
+  {
+    "benchmark name": "noir_poseidon_hash_8",
+    "path": "libs/cryptography/noir_poseidon/bench/poseidon_hash_8",
+    "repository": "https://github.com/noir-lang/poseidon",
+    "commit": "0880c371e88e583d39515fd3f877538657ac41eb",
+    "enabled": true
+  },
+  {
+    "benchmark name": "noir_poseidon_sponge_1",
+    "path": "libs/cryptography/noir_poseidon/bench/poseidon_sponge_1",
+    "repository": "https://github.com/noir-lang/poseidon",
+    "commit": "0880c371e88e583d39515fd3f877538657ac41eb",
+    "enabled": true
+  },
+  {
+    "benchmark name": "noir_poseidon_sponge_4",
+    "path": "libs/cryptography/noir_poseidon/bench/poseidon_sponge_4",
+    "repository": "https://github.com/noir-lang/poseidon",
+    "commit": "0880c371e88e583d39515fd3f877538657ac41eb",
+    "enabled": true
+  },
+  {
+    "benchmark name": "noir_poseidon_sponge_8",
+    "path": "libs/cryptography/noir_poseidon/bench/poseidon_sponge_8",
+    "repository": "https://github.com/noir-lang/poseidon",
+    "commit": "0880c371e88e583d39515fd3f877538657ac41eb",
+    "enabled": true
+  },
+  {
+    "benchmark name": "noir_poseidon_sponge_16",
+    "path": "libs/cryptography/noir_poseidon/bench/poseidon_sponge_16",
+    "repository": "https://github.com/noir-lang/poseidon",
+    "commit": "0880c371e88e583d39515fd3f877538657ac41eb",
+    "enabled": true
+  },
+  {
+    "benchmark name": "noir_poseidon_sponge_32",
+    "path": "libs/cryptography/noir_poseidon/bench/poseidon_sponge_32",
+    "repository": "https://github.com/noir-lang/poseidon",
+    "commit": "0880c371e88e583d39515fd3f877538657ac41eb",
+    "enabled": true
+  },
+  {
+    "benchmark name": "noir_sha256_1",
+    "path": "libs/cryptography/noir_sha256/bench/sha256_1",
+    "repository": "https://github.com/noir-lang/sha256",
+    "commit": "9442e5b6856f98b2ec029882d7e90199ecff91ba",
+    "enabled": true
+  },
+  {
+    "benchmark name": "noir_sha256_200",
+    "path": "libs/cryptography/noir_sha256/bench/sha256_200",
+    "repository": "https://github.com/noir-lang/sha256",
+    "commit": "9442e5b6856f98b2ec029882d7e90199ecff91ba",
+    "enabled": true
+  },
+  {
+    "benchmark name": "noir_sha256_511",
+    "path": "libs/cryptography/noir_sha256/bench/sha256_511",
+    "repository": "https://github.com/noir-lang/sha256",
+    "commit": "9442e5b6856f98b2ec029882d7e90199ecff91ba",
+    "enabled": true
+  },
+  {
+    "benchmark name": "noir_sha256_512",
+    "path": "libs/cryptography/noir_sha256/bench/sha256_512",
+    "repository": "https://github.com/noir-lang/sha256",
+    "commit": "9442e5b6856f98b2ec029882d7e90199ecff91ba",
+    "enabled": true
+  },
+  {
+    "benchmark name": "noir_sha512_compression",
+    "path": "libs/cryptography/noir_sha512/bench/sha512_compression",
+    "repository": "https://github.com/noir-lang/sha512",
+    "commit": "e92ffb473f3264529a0793770f63a09946df50cc",
+    "enabled": false
+  },
+  {
+    "benchmark name": "noir_sha512_1_block",
+    "path": "libs/cryptography/noir_sha512/bench/sha512_1_block",
+    "repository": "https://github.com/noir-lang/sha512",
+    "commit": "e92ffb473f3264529a0793770f63a09946df50cc",
+    "enabled": false
+  },
+  {
+    "benchmark name": "noir_sha512_2_blocks",
+    "path": "libs/cryptography/noir_sha512/bench/sha512_2_blocks",
+    "repository": "https://github.com/noir-lang/sha512",
+    "commit": "e92ffb473f3264529a0793770f63a09946df50cc",
+    "enabled": false
+  },
+  {
+    "benchmark name": "noir_sha512_3_blocks",
+    "path": "libs/cryptography/noir_sha512/bench/sha512_3_blocks",
+    "repository": "https://github.com/noir-lang/sha512",
+    "commit": "e92ffb473f3264529a0793770f63a09946df50cc",
+    "enabled": false
+  },
+  {
+    "benchmark name": "noir_sha512_4_blocks",
+    "path": "libs/cryptography/noir_sha512/bench/sha512_4_blocks",
+    "repository": "https://github.com/noir-lang/sha512",
+    "commit": "e92ffb473f3264529a0793770f63a09946df50cc",
+    "enabled": false
+  },
+  {
+    "benchmark name": "noir_sha512_var_1_block",
+    "path": "libs/cryptography/noir_sha512/bench/sha512_var_1_block",
+    "repository": "https://github.com/noir-lang/sha512",
+    "commit": "e92ffb473f3264529a0793770f63a09946df50cc",
+    "enabled": false
+  },
+  {
+    "benchmark name": "noir_sha512_var_2_blocks",
+    "path": "libs/cryptography/noir_sha512/bench/sha512_var_2_blocks",
+    "repository": "https://github.com/noir-lang/sha512",
+    "commit": "e92ffb473f3264529a0793770f63a09946df50cc",
+    "enabled": false
+  },
+  {
+    "benchmark name": "noir_sha512_var_3_blocks",
+    "path": "libs/cryptography/noir_sha512/bench/sha512_var_3_blocks",
+    "repository": "https://github.com/noir-lang/sha512",
+    "commit": "e92ffb473f3264529a0793770f63a09946df50cc",
+    "enabled": false
+  },
+  {
+    "benchmark name": "noir_sha512_var_4_blocks",
+    "path": "libs/cryptography/noir_sha512/bench/sha512_var_4_blocks",
+    "repository": "https://github.com/noir-lang/sha512",
+    "commit": "e92ffb473f3264529a0793770f63a09946df50cc",
+    "enabled": false
+  },
+  {
+    "benchmark name": "noir_eddsa_poseidon",
+    "path": "libs/cryptography/noir_eddsa/bench/eddsa_poseidon",
+    "repository": "https://github.com/noir-lang/eddsa",
+    "commit": "eb103ec311bf26c0d6e9da12a8ff4850968a9104",
+    "enabled": true
+  },
+  {
+    "benchmark name": "noir_eth-proofs_get_account",
+    "path": "libs/cryptography/noir_eth-proofs/get_account",
+    "repository": "https://github.com/noir-lang/eth-proofs",
+    "commit": "b0962c951782c97c2a634bdbe94966a15634ece8",
+    "enabled": false
+  },
+  {
+    "benchmark name": "noir_eth-proofs_get_header",
+    "path": "libs/cryptography/noir_eth-proofs/get_header",
+    "repository": "https://github.com/noir-lang/eth-proofs",
+    "commit": "b0962c951782c97c2a634bdbe94966a15634ece8",
+    "enabled": false
+  },
+  {
+    "benchmark name": "noir_eth-proofs_get_log",
+    "path": "libs/cryptography/noir_eth-proofs/get_log",
+    "repository": "https://github.com/noir-lang/eth-proofs",
+    "commit": "b0962c951782c97c2a634bdbe94966a15634ece8",
+    "enabled": false
+  },
+  {
+    "benchmark name": "noir_eth-proofs_get_receipt",
+    "path": "libs/cryptography/noir_eth-proofs/get_receipt",
+    "repository": "https://github.com/noir-lang/eth-proofs",
+    "commit": "b0962c951782c97c2a634bdbe94966a15634ece8",
+    "enabled": false
+  },
+  {
+    "benchmark name": "noir_eth-proofs_get_storage",
+    "path": "libs/cryptography/noir_eth-proofs/get_storage",
+    "repository": "https://github.com/noir-lang/eth-proofs",
+    "commit": "b0962c951782c97c2a634bdbe94966a15634ece8",
+    "enabled": false
+  },
+  {
+    "benchmark name": "noir_eth-proofs_get_storage_recursive",
+    "path": "libs/cryptography/noir_eth-proofs/get_storage_recursive",
+    "repository": "https://github.com/noir-lang/eth-proofs",
+    "commit": "b0962c951782c97c2a634bdbe94966a15634ece8",
+    "enabled": false
+  },
+  {
+    "benchmark name": "noir_eth-proofs_get_transaction",
+    "path": "libs/cryptography/noir_eth-proofs/get_transaction",
+    "repository": "https://github.com/noir-lang/eth-proofs",
+    "commit": "b0962c951782c97c2a634bdbe94966a15634ece8",
+    "enabled": false
+  },
+  {
     "benchmark name": "payy",
     "path": "applications/payy",
     "repository": "https://github.com/polybase/payy",
