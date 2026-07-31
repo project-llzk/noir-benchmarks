@@ -910,8 +910,85 @@
     "enabled": true
   },
   {
-    "benchmark name": "aztec-packages",
-    "path": "applications/aztec-packages",
+    "benchmark name": "aztec-packages/parity-base",
+    "path": "applications/aztec-packages/parity-base",
+    "repository": "https://github.com/AztecProtocol/aztec-packages",
+    "commit": "3ffc13a503b7bf321c3578399074938c75f2ac7e",
+    "enabled": true
+  },
+  {
+    "benchmark name": "aztec-packages/parity-root",
+    "path": "applications/aztec-packages/parity-root",
+    "repository": "https://github.com/AztecProtocol/aztec-packages",
+    "commit": "3ffc13a503b7bf321c3578399074938c75f2ac7e",
+    "enabled": true
+  },
+  {
+    "benchmark name": "aztec-packages/private-kernel-init",
+    "path": "applications/aztec-packages/private-kernel-init",
+    "repository": "https://github.com/AztecProtocol/aztec-packages",
+    "commit": "3ffc13a503b7bf321c3578399074938c75f2ac7e",
+    "enabled": true
+  },
+  {
+    "benchmark name": "aztec-packages/private-kernel-inner",
+    "path": "applications/aztec-packages/private-kernel-inner",
+    "repository": "https://github.com/AztecProtocol/aztec-packages",
+    "commit": "3ffc13a503b7bf321c3578399074938c75f2ac7e",
+    "enabled": true
+  },
+  {
+    "benchmark name": "aztec-packages/private-kernel-reset",
+    "path": "applications/aztec-packages/private-kernel-reset",
+    "repository": "https://github.com/AztecProtocol/aztec-packages",
+    "commit": "3ffc13a503b7bf321c3578399074938c75f2ac7e",
+    "enabled": true
+  },
+  {
+    "benchmark name": "aztec-packages/rollup-tx-base-private",
+    "path": "applications/aztec-packages/rollup-tx-base-private",
+    "repository": "https://github.com/AztecProtocol/aztec-packages",
+    "commit": "3ffc13a503b7bf321c3578399074938c75f2ac7e",
+    "enabled": true
+  },
+  {
+    "benchmark name": "aztec-packages/rollup-tx-base-public",
+    "path": "applications/aztec-packages/rollup-tx-base-public",
+    "repository": "https://github.com/AztecProtocol/aztec-packages",
+    "commit": "3ffc13a503b7bf321c3578399074938c75f2ac7e",
+    "enabled": true
+  },
+  {
+    "benchmark name": "aztec-packages/rollup-tx-merge",
+    "path": "applications/aztec-packages/rollup-tx-merge",
+    "repository": "https://github.com/AztecProtocol/aztec-packages",
+    "commit": "3ffc13a503b7bf321c3578399074938c75f2ac7e",
+    "enabled": true
+  },
+  {
+    "benchmark name": "aztec-packages/rollup-block-root",
+    "path": "applications/aztec-packages/rollup-block-root",
+    "repository": "https://github.com/AztecProtocol/aztec-packages",
+    "commit": "3ffc13a503b7bf321c3578399074938c75f2ac7e",
+    "enabled": true
+  },
+  {
+    "benchmark name": "aztec-packages/rollup-block-merge",
+    "path": "applications/aztec-packages/rollup-block-merge",
+    "repository": "https://github.com/AztecProtocol/aztec-packages",
+    "commit": "3ffc13a503b7bf321c3578399074938c75f2ac7e",
+    "enabled": true
+  },
+  {
+    "benchmark name": "aztec-packages/rollup-root",
+    "path": "applications/aztec-packages/rollup-root",
+    "repository": "https://github.com/AztecProtocol/aztec-packages",
+    "commit": "3ffc13a503b7bf321c3578399074938c75f2ac7e",
+    "enabled": true
+  },
+  {
+    "benchmark name": "aztec-packages/rollup-checkpoint-root",
+    "path": "applications/aztec-packages/rollup-checkpoint-root",
     "repository": "https://github.com/AztecProtocol/aztec-packages",
     "commit": "3ffc13a503b7bf321c3578399074938c75f2ac7e",
     "enabled": false
