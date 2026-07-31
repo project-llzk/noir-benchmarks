@@ -896,6 +896,13 @@
     "enabled": true
   },
   {
+    "benchmark name": "payy/erc20_transfer",
+    "path": "applications/payy/evm/erc20_transfer",
+    "repository": "https://github.com/polybase/payy",
+    "commit": "2f95947f12981a838f6f0c9dddace825bf835502",
+    "enabled": true
+  },
+  {
     "benchmark name": "stellar_confidential_token",
     "path": "applications/stellar/confidential_token",
     "repository": "https://github.com/OpenZeppelin/stellar-contracts",
