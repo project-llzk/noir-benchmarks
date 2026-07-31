@@ -486,7 +486,7 @@ def run_benchmarks(
         error_cnt += 1 if cause == "error" else 0
         timeout_cnt += 1 if cause == "timeout" else 0
 
-    output_path = os.path.join(output_dir, "noir_benchmarks_results.csv")
+    output_path = os.path.join(output_dir, "benchmarks_results.csv")
     with open(output_path, "w", encoding="utf-8", newline="") as handle:
         writer = csv.writer(handle)
         writer.writerow([
