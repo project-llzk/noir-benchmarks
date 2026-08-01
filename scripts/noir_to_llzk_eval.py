@@ -492,9 +492,9 @@ def run_benchmarks(
         writer.writerow([
             "Benchmark",
             "Result",
-            "Nargo Compile Time Seconds",
-            "ACIR2LLZK Time Seconds",
-            "Total Time Seconds",
+            "Nargo Compile Time (sec)",
+            "ACIR2LLZK Time (sec)",
+            "Total Time (sec)",
             "Error Message",
         ])
         writer.writerows(results)
