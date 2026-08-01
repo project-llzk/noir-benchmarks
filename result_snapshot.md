@@ -1,7 +1,7 @@
-Machine specs = 2023 MacBook Pro, Apple M2 Pro, 16GB, 495GB SSD, macOS v26.6
-nthreads = 1
-timeout = 600
-noir_llzk commit = a1013fb69e913cc33e248434ebede785e9dc6790
+Machine specs = 2023 MacBook Pro, Apple M2 Pro, 16GB, 495GB SSD, macOS v26.6 \
+nthreads = 1 \
+timeout = 600 \
+noir_llzk commit = a1013fb69e913cc33e248434ebede785e9dc6790 \
 nargo version = 1.0.0-beta.19
 
 |Benchmark|Result|Nargo Compile Time (sec)|ACIR2LLZK Time (sec)|Total Time (sec)|Error Message|

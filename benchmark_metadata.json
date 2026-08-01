@@ -319,7 +319,7 @@
     "path": "libs/cryptography/noir_eth-proofs/get_header",
     "repository": "https://github.com/noir-lang/eth-proofs",
     "commit": "b0962c951782c97c2a634bdbe94966a15634ece8",
-    "enabled": false
+    "enabled": true
   },
   {
     "benchmark name": "noir_eth-proofs_get_log",
@@ -753,28 +753,28 @@
     "path": "libs/encoding/noir_json_parser/bench/parse_2kb",
     "repository": "https://github.com/noir-lang/noir_json_parser",
     "commit": "b37c06b9a5a619655b23a2164ace351aa5492ad8",
-    "enabled": true
+    "enabled": false
   },
   {
     "benchmark name": "noir_json_parser_parse_4kb",
     "path": "libs/encoding/noir_json_parser/bench/parse_4kb",
     "repository": "https://github.com/noir-lang/noir_json_parser",
     "commit": "b37c06b9a5a619655b23a2164ace351aa5492ad8",
-    "enabled": true
+    "enabled": false
   },
   {
     "benchmark name": "noir_json_parser_parse_8kb",
     "path": "libs/encoding/noir_json_parser/bench/parse_8kb",
     "repository": "https://github.com/noir-lang/noir_json_parser",
     "commit": "b37c06b9a5a619655b23a2164ace351aa5492ad8",
-    "enabled": true
+    "enabled": false
   },
   {
     "benchmark name": "noir_json_parser_parse_16kb",
     "path": "libs/encoding/noir_json_parser/bench/parse_16kb",
     "repository": "https://github.com/noir-lang/noir_json_parser",
     "commit": "b37c06b9a5a619655b23a2164ace351aa5492ad8",
-    "enabled": true
+    "enabled": false
   },
   {
     "benchmark name": "noir_json_parser_get_number",
