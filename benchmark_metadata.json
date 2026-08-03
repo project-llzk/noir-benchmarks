@@ -319,7 +319,7 @@
     "path": "libs/cryptography/noir_eth-proofs/get_header",
     "repository": "https://github.com/noir-lang/eth-proofs",
     "commit": "b0962c951782c97c2a634bdbe94966a15634ece8",
-    "enabled": false
+    "enabled": true
   },
   {
     "benchmark name": "noir_eth-proofs_get_log",
@@ -753,28 +753,28 @@
     "path": "libs/encoding/noir_json_parser/bench/parse_2kb",
     "repository": "https://github.com/noir-lang/noir_json_parser",
     "commit": "b37c06b9a5a619655b23a2164ace351aa5492ad8",
-    "enabled": true
+    "enabled": false
   },
   {
     "benchmark name": "noir_json_parser_parse_4kb",
     "path": "libs/encoding/noir_json_parser/bench/parse_4kb",
     "repository": "https://github.com/noir-lang/noir_json_parser",
     "commit": "b37c06b9a5a619655b23a2164ace351aa5492ad8",
-    "enabled": true
+    "enabled": false
   },
   {
     "benchmark name": "noir_json_parser_parse_8kb",
     "path": "libs/encoding/noir_json_parser/bench/parse_8kb",
     "repository": "https://github.com/noir-lang/noir_json_parser",
     "commit": "b37c06b9a5a619655b23a2164ace351aa5492ad8",
-    "enabled": true
+    "enabled": false
   },
   {
     "benchmark name": "noir_json_parser_parse_16kb",
     "path": "libs/encoding/noir_json_parser/bench/parse_16kb",
     "repository": "https://github.com/noir-lang/noir_json_parser",
     "commit": "b37c06b9a5a619655b23a2164ace351aa5492ad8",
-    "enabled": true
+    "enabled": false
   },
   {
     "benchmark name": "noir_json_parser_get_number",
@@ -896,6 +896,13 @@
     "enabled": true
   },
   {
+    "benchmark name": "payy/erc20_transfer",
+    "path": "applications/payy/evm/erc20_transfer",
+    "repository": "https://github.com/polybase/payy",
+    "commit": "2f95947f12981a838f6f0c9dddace825bf835502",
+    "enabled": true
+  },
+  {
     "benchmark name": "stellar_confidential_token",
     "path": "applications/stellar/confidential_token",
     "repository": "https://github.com/OpenZeppelin/stellar-contracts",
@@ -910,8 +917,85 @@
     "enabled": true
   },
   {
-    "benchmark name": "aztec-packages",
-    "path": "applications/aztec-packages",
+    "benchmark name": "aztec-packages/parity-base",
+    "path": "applications/aztec-packages/parity-base",
+    "repository": "https://github.com/AztecProtocol/aztec-packages",
+    "commit": "3ffc13a503b7bf321c3578399074938c75f2ac7e",
+    "enabled": true
+  },
+  {
+    "benchmark name": "aztec-packages/parity-root",
+    "path": "applications/aztec-packages/parity-root",
+    "repository": "https://github.com/AztecProtocol/aztec-packages",
+    "commit": "3ffc13a503b7bf321c3578399074938c75f2ac7e",
+    "enabled": true
+  },
+  {
+    "benchmark name": "aztec-packages/private-kernel-init",
+    "path": "applications/aztec-packages/private-kernel-init",
+    "repository": "https://github.com/AztecProtocol/aztec-packages",
+    "commit": "3ffc13a503b7bf321c3578399074938c75f2ac7e",
+    "enabled": true
+  },
+  {
+    "benchmark name": "aztec-packages/private-kernel-inner",
+    "path": "applications/aztec-packages/private-kernel-inner",
+    "repository": "https://github.com/AztecProtocol/aztec-packages",
+    "commit": "3ffc13a503b7bf321c3578399074938c75f2ac7e",
+    "enabled": true
+  },
+  {
+    "benchmark name": "aztec-packages/private-kernel-reset",
+    "path": "applications/aztec-packages/private-kernel-reset",
+    "repository": "https://github.com/AztecProtocol/aztec-packages",
+    "commit": "3ffc13a503b7bf321c3578399074938c75f2ac7e",
+    "enabled": true
+  },
+  {
+    "benchmark name": "aztec-packages/rollup-tx-base-private",
+    "path": "applications/aztec-packages/rollup-tx-base-private",
+    "repository": "https://github.com/AztecProtocol/aztec-packages",
+    "commit": "3ffc13a503b7bf321c3578399074938c75f2ac7e",
+    "enabled": true
+  },
+  {
+    "benchmark name": "aztec-packages/rollup-tx-base-public",
+    "path": "applications/aztec-packages/rollup-tx-base-public",
+    "repository": "https://github.com/AztecProtocol/aztec-packages",
+    "commit": "3ffc13a503b7bf321c3578399074938c75f2ac7e",
+    "enabled": true
+  },
+  {
+    "benchmark name": "aztec-packages/rollup-tx-merge",
+    "path": "applications/aztec-packages/rollup-tx-merge",
+    "repository": "https://github.com/AztecProtocol/aztec-packages",
+    "commit": "3ffc13a503b7bf321c3578399074938c75f2ac7e",
+    "enabled": true
+  },
+  {
+    "benchmark name": "aztec-packages/rollup-block-root",
+    "path": "applications/aztec-packages/rollup-block-root",
+    "repository": "https://github.com/AztecProtocol/aztec-packages",
+    "commit": "3ffc13a503b7bf321c3578399074938c75f2ac7e",
+    "enabled": true
+  },
+  {
+    "benchmark name": "aztec-packages/rollup-block-merge",
+    "path": "applications/aztec-packages/rollup-block-merge",
+    "repository": "https://github.com/AztecProtocol/aztec-packages",
+    "commit": "3ffc13a503b7bf321c3578399074938c75f2ac7e",
+    "enabled": true
+  },
+  {
+    "benchmark name": "aztec-packages/rollup-root",
+    "path": "applications/aztec-packages/rollup-root",
+    "repository": "https://github.com/AztecProtocol/aztec-packages",
+    "commit": "3ffc13a503b7bf321c3578399074938c75f2ac7e",
+    "enabled": true
+  },
+  {
+    "benchmark name": "aztec-packages/rollup-checkpoint-root",
+    "path": "applications/aztec-packages/rollup-checkpoint-root",
     "repository": "https://github.com/AztecProtocol/aztec-packages",
     "commit": "3ffc13a503b7bf321c3578399074938c75f2ac7e",
     "enabled": false

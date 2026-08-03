@@ -10,7 +10,6 @@ members = [
   "migrate",
   "poseidon_alt",
   "evm/common",
-  "evm/erc20_transfer",
   "evm/mint",
   "evm/burn",
   "evm/transfer_send",
