@@ -943,5 +943,12 @@
     "repository": "https://github.com/theinterfold/interfold",
     "commit": "2ba9b755d120e6a1c71c0a9f5cae4ef28103c448",
     "enabled": true
+  },
+  {
+    "benchmark name": "mastermind",
+    "path": "applications/mastermind",
+    "repository": "https://github.com/Veridise/zk-language-comparison",
+    "commit": "1a41d983db1bd5719a6318ae52bd899391946933",
+    "enabled": true
   }
 ]
