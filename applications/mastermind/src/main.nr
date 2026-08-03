@@ -14,8 +14,7 @@ fn test_set_code_invalid_large() {
     let _ = circuit::set_code(987654321, code);
 }
 
-#[test]
-fn test_good() {
+fn main() {
     let codemaker_nonce = 987654321;
     let codemaker_code = [0, 2, 1, 4]; // range = [0,5]
 
