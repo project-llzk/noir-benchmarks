@@ -1001,13 +1001,6 @@
     "enabled": false
   },
   {
-    "benchmark name": "interfold-config",
-    "path": "applications/interfold/bin/config",
-    "repository": "https://github.com/theinterfold/interfold",
-    "commit": "2ba9b755d120e6a1c71c0a9f5cae4ef28103c448",
-    "enabled": true
-  },
-  {
     "benchmark name": "interfold-dkg",
     "path": "applications/interfold/bin/dkg",
     "repository": "https://github.com/theinterfold/interfold",
