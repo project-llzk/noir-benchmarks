@@ -14,20 +14,17 @@ fn test_set_code_invalid_large() {
     let _ = circuit::set_code(987654321, code);
 }
 
-fn main() {
-    let codemaker_nonce = 987654321;
-    let codemaker_code = [0, 2, 1, 4]; // range = [0,5]
-
-    // At the beginning, codemaker sets the code
+fn main(
+    codemaker_nonce: Field,
+    codemaker_code: [Field; 4],
+    guess: pub [Field; 4],
+    expected_correct: pub Field,
+    expected_partial: pub Field,
+) {
     let code_hash = circuit::set_code(codemaker_nonce, codemaker_code);
-    // Then codebreaker proceeds to make guesses
-    let guess = [1, 2, 3, 4];
-    let (correct, partial) = circuit::make_guess_with_checks(codemaker_nonce, codemaker_code, code_hash, guess);
-    assert(correct == 2, f"Expected 2, but got {correct}");
-    assert(partial == 1, f"Expected 1, but got {partial}");
-    let guess = [0, 2, 1, 4];
-    let (correct, partial) = circuit::make_guess_with_checks(codemaker_nonce, codemaker_code, code_hash, guess);
-    assert(correct == 4, f"Expected 4, but got {correct}");
-    assert(partial == 0, f"Expected 0, but got {partial}");
-    // If correct == 4 at any point, then the codebreaker wins. If the number of rounds exceeds 10(?) then the codemaker wins.
+    let (correct, partial) =
+        circuit::make_guess_with_checks(codemaker_nonce, codemaker_code, code_hash, guess);
+
+    assert(correct == expected_correct);
+    assert(partial == expected_partial);
 }
